@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripciones y Tarifas | VII Latin American Hydropower 2027</title>
+    <meta name="description" content="Inscripciones y registro oficial para el VII Latin American Hydropower and Systems Meeting 2027 en La Paz, Bolivia.">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230b2b4d'/%3E%3Cpath d='M13 4 6 13.5h5.5L11 20l7-9.5h-5.5z' fill='%23f5b041'/%3E%3C/svg%3E">
+    <meta name="theme-color" content="#0b2b4d">
+    <!-- Estilos enlazados en el <head>: la página se pinta ya estilizada (sin parpadeo al cambiar de página) -->
+    <link rel="stylesheet" href="/src/styles/style.css">
+    <!-- Precarga de las páginas del menú al pasar el cursor (navegación casi instantánea en Chrome/Edge) -->
+    <script type="speculationrules">{"prefetch":[{"where":{"href_matches":"*.html"},"eagerness":"moderate"}]}</script>
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-container">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
+                        <div class="logo-text">
+                            LAHS 2027
+                            <span class="logo-sub">La Paz · Bolivia</span>
+                        </div>
+                    </a>
+                    
+                    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                    
+                    <ul class="nav-menu" id="navMenu">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="resumenes.html">Resúmenes</a></li>
+                        <li><a href="programa.html">Programa</a></li>
+                        <li><a href="inscripciones.html" class="active">Inscripciones</a></li>
+                        <li><a href="conferencistas.html">Conferencistas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div class="hero hero-page">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-tag">Registro Oficial</span>
+                    <h1 class="hero-title">Inscripciones y Tarifas</h1>
+                    <p class="hero-subtitle">Asegura tu participación en el mayor congreso hidroeléctrico de la región</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="section-padding">
+        <div class="container">
+            <!-- Tarifas -->
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Profesional</h3>
+                        <div class="price">
+                            <span class="currency">USD</span>400
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="yes">Acceso total a todas las sesiones técnicas</li>
+                        <li class="yes">Maletín con memorias y material oficial</li>
+                        <li class="yes">Coffee breaks y almuerzos de conferencia</li>
+                        <li class="yes">Cena de gala y cóctel de bienvenida</li>
+                        <li class="yes">Certificado internacional de asistencia</li>
+                    </ul>
+                    <a href="#registro" class="btn btn-secondary btn-block">Elegir Profesional</a>
+                </div>
+
+                <div class="pricing-card featured">
+                    <span class="pricing-badge">Tarifa Académica</span>
+                    <div class="pricing-header">
+                        <h3>Estudiante / Investigador</h3>
+                        <div class="price">
+                            <span class="currency">USD</span>200
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="yes">Acceso a todas las conferencias y ponencias</li>
+                        <li class="yes">Memorias digitales completas del congreso</li>
+                        <li class="yes">Coffee breaks de las jornadas</li>
+                        <li class="yes">Cóctel de bienvenida</li>
+                        <li class="yes">Certificado académico de asistencia</li>
+                        <li class="note">* Requiere carnet estudiantil o carta institucional</li>
+                    </ul>
+                    <a href="#registro" class="btn btn-primary btn-block">Elegir Estudiante</a>
+                </div>
+
+                <div class="pricing-card">
+                    <div class="pricing-header">
+                        <h3>Acompañante</h3>
+                        <div class="price">
+                            <span class="currency">USD</span>150
+                        </div>
+                    </div>
+                    <ul class="pricing-features">
+                        <li class="yes">Acceso a eventos sociales y de bienvenida</li>
+                        <li class="yes">Cóctel de apertura y cena de clausura</li>
+                        <li class="yes">Coffee breaks</li>
+                        <li class="yes">Tour guiado por la ciudad de La Paz</li>
+                        <li class="no">No incluye acceso a sesiones técnicas</li>
+                    </ul>
+                    <a href="#registro" class="btn btn-secondary btn-block">Elegir Acompañante</a>
+                </div>
+            </div>
+
+            <!-- Formulario de Inscripción -->
+            <div class="form-wrapper" id="registro">
+                <div class="section-header form-header">
+                    <span class="section-subtitle">Formulario de Preinscripción</span>
+                    <h2 class="section-title">Completa tu Registro</h2>
+                    <p class="section-lead">Tus datos serán procesados automáticamente por el comité organizador de la UMSA.</p>
+                </div>
+
+                <form id="registrationForm" novalidate>
+                    <!-- Honeypot anti-spam -->
+                    <div class="trap-field" aria-hidden="true">
+                        <label for="regHoneypot">No completar:</label>
+                        <input type="text" id="regHoneypot" name="verification_user_code" tabindex="-1" autocomplete="off" />
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstname">Nombres *</label>
+                            <input type="text" id="firstname" required placeholder="Ej. Juan" />
+                        </div>
+                        <div class="form-group">
+                            <label for="lastname">Apellidos *</label>
+                            <input type="text" id="lastname" required placeholder="Ej. Perez" />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico *</label>
+                            <input type="email" id="email" required placeholder="tu-email@institucion.edu" />
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Teléfono / WhatsApp *</label>
+                            <input type="tel" id="phone" required placeholder="+591 7XXXXXXX" />
+                        </div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="country">País de Residencia *</label>
+                            <select id="country" required>
+                                <option value="">Selecciona tu país</option>
+                                <option value="Bolivia">Bolivia</option>
+                                <option value="Argentina">Argentina</option>
+                                <option value="Brasil">Brasil</option>
+                                <option value="Chile">Chile</option>
+                                <option value="Colombia">Colombia</option>
+                                <option value="Ecuador">Ecuador</option>
+                                <option value="Paraguay">Paraguay</option>
+                                <option value="Perú">Perú</option>
+                                <option value="Uruguay">Uruguay</option>
+                                <option value="México">México</option>
+                                <option value="España">España</option>
+                                <option value="Otro">Otro País</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="institution">Institución o Empresa *</label>
+                            <input type="text" id="institution" required placeholder="Ej. UMSA / Empresa Eléctrica..." />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Categoría de Inscripción *</label>
+                        <select id="category" required>
+                            <option value="">Selecciona una categoría</option>
+                            <option value="Profesional - USD 400">Profesional (USD 400)</option>
+                            <option value="Estudiante - USD 200">Estudiante / Investigador (USD 200)</option>
+                            <option value="Acompañante - USD 150">Acompañante (USD 150)</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="comments">Comentarios o requerimientos dietarios / accesibilidad</label>
+                        <textarea id="comments" rows="3" placeholder="Indica si requieres alimentación especial (vegetariano, sin gluten) o asistencia..."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block" id="btnSubmitReg">
+                        Completar Preinscripción
+                    </button>
+
+                    <div class="form-feedback" id="registrationFeedback"></div>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>LAHS 2027</h4>
+                    <p>VII Latin American Hydropower and Systems Meeting. 7 al 11 de junio de 2027 · La Paz, Bolivia.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Navegación</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="resumenes.html">Resúmenes</a></li>
+                        <li><a href="inscripciones.html">Inscripciones</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Sede</h4>
+                    <p>Facultad de Ingeniería · UMSA<br>La Paz, Bolivia</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <p><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> florestromer768@gmail.com<br><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> acalizaya@umsa.bo</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2027 Latin American Hydropower and Systems Meeting. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
