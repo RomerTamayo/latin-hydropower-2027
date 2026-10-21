@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Conferencistas y Comités | VII Latin American Hydropower 2027</title>
-    <meta name="description" content="Conferencistas magistrales, comité científico y comité organizador del VII Latin American Hydropower 2027 en La Paz, Bolivia.">
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='6' fill='%230b2b4d'/%3E%3Cpath d='M13 4 6 13.5h5.5L11 20l7-9.5h-5.5z' fill='%23f5b041'/%3E%3C/svg%3E">
-    <meta name="theme-color" content="#0b2b4d">
-    <!-- Estilos enlazados en el <head>: la página se pinta ya estilizada (sin parpadeo al cambiar de página) -->
+    <title>Conferencistas - LAHS 2025</title>
     <link rel="stylesheet" href="/src/styles/style.css">
-    <!-- Precarga de las páginas del menú al pasar el cursor (navegación casi instantánea en Chrome/Edge) -->
-    <script type="speculationrules">{"prefetch":[{"where":{"href_matches":"*.html"},"eagerness":"moderate"}]}</script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -18,14 +13,11 @@
             <div class="container">
                 <div class="nav-container">
                     <a href="index.html" class="logo">
-                        <span class="logo-icon"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></span>
-                        <div class="logo-text">
-                            LAHS 2027
-                            <span class="logo-sub">La Paz · Bolivia</span>
-                        </div>
+                        <span class="logo-icon">⚡</span>
+                        <span class="logo-text">LAHS 2025</span>
                     </a>
                     
-                    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+                    <button class="menu-toggle" id="menuToggle">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -42,104 +34,280 @@
                 </div>
             </div>
         </nav>
-        
-        <div class="hero hero-page">
-            <div class="container">
-                <div class="hero-content">
-                    <span class="hero-tag">Comité y Ponentes</span>
-                    <h1 class="hero-title">Conferencistas y Comités</h1>
-                    <p class="hero-subtitle">Referentes mundiales y líderes de la ingeniería hidroeléctrica</p>
-                </div>
-            </div>
-        </div>
     </header>
 
-    <main class="section-padding">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Paneles Magistrales</span>
-                <h2 class="section-title">Conferencistas Destacados</h2>
-                <p class="section-lead">El congreso contará con conferencias plenarias impartidas por catedráticos y especialistas internacionales de Europa, Norteamérica y Latinoamérica.</p>
-            </div>
-
-            <div class="themes-grid speakers-grid">
-                <div class="theme-card speaker-card">
-                    <div class="speaker-avatar"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-                    <h3>Modelación Hidrodinámica & CFD</h3>
-                    <p class="speaker-role">Cátedra Internacional</p>
-                    <p>Avances en simulación computacional de alta fidelidad para turbinas Francis y Kaplan de gran potencia.</p>
-                </div>
-
-                <div class="theme-card speaker-card">
-                    <div class="speaker-avatar"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-                    <h3>Ingeniería de Turbomáquinas</h3>
-                    <p class="speaker-role">Sector Industrial & Fabricantes</p>
-                    <p>Diseño de rodetes resistentes a la abrasión por sedimentos y desgaste erosivo en ríos de alta montaña.</p>
-                </div>
-
-                <div class="theme-card speaker-card">
-                    <div class="speaker-avatar"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></div>
-                    <h3>Cavitación y Diagnóstico Vibracional</h3>
-                    <p class="speaker-role">Investigación Aplicada</p>
-                    <p>Técnicas avanzadas de detección temprana de vórtices de cavitación y pulsaciones de presión.</p>
+    <main>
+        <!-- Page Header -->
+        <section class="page-header">
+            <div class="container">
+                <h1>Conferencistas</h1>
+                <div class="breadcrumbs">
+                    <a href="index.html">Inicio</a> / <span>Conferencistas</span>
                 </div>
             </div>
+        </section>
 
-            <!-- Comités -->
-            <div class="committee-grid">
-                <div class="info-card">
-                    <h3 class="info-card-title underlined">Comité Organizador UMSA</h3>
-                    <ul class="info-list">
-                        <li><strong>Facultad de Ingeniería</strong> · Universidad Mayor de San Andrés</li>
-                        <li><strong>Carrera de Ingeniería Mecánica y Electromecánica</strong></li>
-                        <li><strong>Instituto de Investigaciones Mecánicas y Electromecánicas (IIME)</strong></li>
-                        <li><strong>Coordinación General LAHS 2027</strong></li>
-                    </ul>
+        <!-- Keynote Speakers -->
+        <section class="speakers-section section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-subtitle">Expertos internacionales</span>
+                    <h2 class="section-title">Conferencistas Magistrales</h2>
+                    <p class="section-description">Próximamente anunciaremos los conferencistas confirmados para el VI Latin American Hydropower and Systems Meeting</p>
                 </div>
 
-                <div class="info-card">
-                    <h3 class="info-card-title underlined">Comité Científico Internacional</h3>
-                    <ul class="info-list">
-                        <li><strong>Revisores y Evaluadores</strong> de universidades de Sudamérica y Europa</li>
-                        <li><strong>Arbitraje Científico</strong> por pares ciegos</li>
-                        <li><strong>Publicación de Memorias</strong> indexadas</li>
-                        <li><strong>Premios al Mejor Paper</strong> en categoría profesional y estudiantil</li>
-                    </ul>
+                <!-- Speaker Cards Placeholder -->
+                <div class="speakers-grid-full">
+                    <div class="speaker-card-full coming-soon">
+                        <div class="speaker-image-large placeholder"></div>
+                        <div class="speaker-info">
+                            <h3>Conferencista 1</h3>
+                            <p class="speaker-title">Por confirmar</p>
+                            <p class="speaker-institution"></p>
+                            <div class="speaker-bio">
+                                <p>Próximamente anunciaremos los detalles de este conferencista.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="speaker-card-full coming-soon">
+                        <div class="speaker-image-large placeholder"></div>
+                        <div class="speaker-info">
+                            <h3>Conferencista 2</h3>
+                            <p class="speaker-title">Por confirmar</p>
+                            <p class="speaker-institution"></p>
+                            <div class="speaker-bio">
+                                <p>Próximamente anunciaremos los detalles de este conferencista.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="speaker-card-full coming-soon">
+                        <div class="speaker-image-large placeholder"></div>
+                        <div class="speaker-info">
+                            <h3>Conferencista 3</h3>
+                            <p class="speaker-title">Por confirmar</p>
+                            <p class="speaker-institution"></p>
+                            <div class="speaker-bio">
+                                <p>Próximamente anunciaremos los detalles de este conferencista.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Invitados especiales -->
+                <div class="special-guests" style="margin-top: 4rem;">
+                    <h3 class="text-center">Invitados Especiales</h3>
+                    <div class="guests-grid">
+                        <div class="guest-item">
+                            <span class="guest-tag">Próximamente</span>
+                        </div>
+                        <div class="guest-item">
+                            <span class="guest-tag">Próximamente</span>
+                        </div>
+                        <div class="guest-item">
+                            <span class="guest-tag">Próximamente</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Call for Speakers -->
+                <div class="call-for-speakers bg-light">
+                    <div class="call-content">
+                        <h3>¿Quieres ser conferencista?</h3>
+                        <p>Si estás interesado en presentar tu trabajo en el congreso, envía tu resumen a través de nuestra plataforma.</p>
+                        <a href="resumenes.html" class="btn btn-primary">Enviar resumen</a>
+                    </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 
     <footer class="footer">
+        <!-- Mismo footer que index.html -->
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-col">
-                    <h4>LAHS 2027</h4>
-                    <p>VII Latin American Hydropower and Systems Meeting. 7 al 11 de junio de 2027 · La Paz, Bolivia.</p>
+                <div class="footer-info">
+                    <div class="footer-logo">⚡ LAHS 2025</div>
+                    <p>VI Latin American Hydropower<br>and Systems Meeting</p>
+                    <p>Montevideo, Uruguay</p>
                 </div>
-                <div class="footer-col">
-                    <h4>Navegación</h4>
-                    <ul class="footer-links">
+                
+                <div class="footer-links">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
                         <li><a href="index.html">Inicio</a></li>
                         <li><a href="resumenes.html">Resúmenes</a></li>
+                        <li><a href="programa.html">Programa</a></li>
                         <li><a href="inscripciones.html">Inscripciones</a></li>
                     </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Sede</h4>
-                    <p>Facultad de Ingeniería · UMSA<br>La Paz, Bolivia</p>
+                
+                <div class="footer-links">
+                    <h4>Información</h4>
+                    <ul>
+                        <li><a href="conferencistas.html">Conferencistas</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
                 </div>
-                <div class="footer-col">
-                    <h4>Contacto</h4>
-                    <p><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> florestromer768@gmail.com<br><svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg> acalizaya@umsa.bo</p>
+                
+                <div class="footer-social">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Twitter">𝕏</a>
+                        <a href="#" aria-label="LinkedIn">in</a>
+                        <a href="#" aria-label="Facebook">f</a>
+                    </div>
                 </div>
             </div>
+            
             <div class="footer-bottom">
-                <p>© 2027 Latin American Hydropower and Systems Meeting. Todos los derechos reservados.</p>
+                <p>&copy; 2025 VI Latin American Hydropower and Systems Meeting. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
     <script type="module" src="/src/main.ts"></script>
+    <script>
+        // Estilos adicionales para esta página
+        const style = document.createElement('style');
+        style.textContent = `
+            .section-description {
+                max-width: 700px;
+                margin: 1rem auto 0;
+                color: var(--text-light);
+            }
+
+            .speakers-grid-full {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+                gap: 3rem;
+                margin-top: 3rem;
+            }
+
+            .speaker-card-full {
+                background-color: var(--white);
+                border-radius: 16px;
+                overflow: hidden;
+                box-shadow: var(--shadow-lg);
+                transition: var(--transition);
+            }
+
+            .speaker-card-full:hover {
+                transform: translateY(-5px);
+                box-shadow: var(--shadow-lg);
+            }
+
+            .speaker-image-large {
+                width: 100%;
+                height: 300px;
+                background: linear-gradient(135deg, var(--bg-gray), var(--border));
+                position: relative;
+            }
+
+            .speaker-image-large.placeholder::after {
+                content: '🔜 Foto del conferencista';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: var(--text-light);
+                font-size: 1rem;
+                opacity: 0.7;
+            }
+
+            .speaker-info {
+                padding: 2rem;
+            }
+
+            .speaker-info h3 {
+                color: var(--primary-dark);
+                font-size: 1.5rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .speaker-title {
+                color: var(--accent);
+                font-weight: 600;
+                margin-bottom: 0.5rem;
+            }
+
+            .speaker-institution {
+                color: var(--text-light);
+                margin-bottom: 1rem;
+            }
+
+            .speaker-bio {
+                color: var(--text-dark);
+                line-height: 1.6;
+            }
+
+            .text-center {
+                text-align: center;
+                margin-bottom: 2rem;
+                color: var(--primary-dark);
+            }
+
+            .guests-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 2rem;
+                margin-top: 2rem;
+            }
+
+            .guest-item {
+                background-color: var(--white);
+                padding: 3rem;
+                border-radius: 12px;
+                text-align: center;
+                box-shadow: var(--shadow);
+            }
+
+            .guest-tag {
+                display: inline-block;
+                background-color: var(--bg-light);
+                padding: 0.5rem 1.5rem;
+                border-radius: 50px;
+                color: var(--text-light);
+            }
+
+            .call-for-speakers {
+                margin-top: 4rem;
+                padding: 4rem;
+                border-radius: 16px;
+                text-align: center;
+            }
+
+            .call-content h3 {
+                color: var(--primary-dark);
+                font-size: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            .call-content p {
+                color: var(--text-light);
+                margin-bottom: 2rem;
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            @media (max-width: 768px) {
+                .speakers-grid-full {
+                    grid-template-columns: 1fr;
+                }
+                
+                .call-for-speakers {
+                    padding: 2rem;
+                }
+                
+                .call-content h3 {
+                    font-size: 1.5rem;
+                }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 </body>
 </html>
