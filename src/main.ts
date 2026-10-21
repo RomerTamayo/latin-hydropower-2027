@@ -1,100 +1,122 @@
-// ===== MENÚ MÓVIL =====
-const menuToggle = document.getElementById('menuToggle');
-const navMenu = document.getElementById('navMenu');
+document.addEventListener('DOMContentLoaded', () => {
+    initNavbar();
+    initReveal();
+    initCountdown();
+    initProgramTabs();
+    initContactForm();
+});
 
-if (menuToggle && navMenu) {
-    menuToggle.addEventListener('click', () => {
-        menuToggle.classList.toggle('active');
-        navMenu.classList.toggle('active');
+/**
+ * Menú móvil y estilo del navbar al hacer scroll
+ */
+function initNavbar(): void {
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
 
-        // Prevenir scroll cuando el menú está abierto
-        if (navMenu.classList.contains('active')) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
-        }
-    });
-}
+    if (menuToggle && navMenu) {
+        const setOpen = (open: boolean): void => {
+            navMenu.classList.toggle('active', open);
+            menuToggle.classList.toggle('active', open);
+            menuToggle.setAttribute('aria-expanded', String(open));
+            menuToggle.setAttribute('aria-label', open ? 'Cerrar menú' : 'Abrir menú');
+            document.body.style.overflow = open ? 'hidden' : '';
+        };
 
-// ===== CAMBIO DE ESTILO DEL NAVBAR AL HACER SCROLL =====
-window.addEventListener('scroll', () => {
-    const navbar = document.querySelector('.navbar');
-    if (!navbar) return;
-    if (window.scrollY > 50) {
-        navbar.classList.add('scrolled');
-    } else {
-        navbar.classList.remove('scrolled');
+        menuToggle.addEventListener('click', () => setOpen(!navMenu.classList.contains('active')));
+        navMenu.querySelectorAll('a').forEach(link => link.addEventListener('click', () => setOpen(false)));
+        window.addEventListener('resize', () => {
+            if (window.innerWidth > 1100) setOpen(false);
+        });
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') setOpen(false);
+        });
     }
-});
 
-// ===== ANIMACIONES AL HACER SCROLL =====
-const observerOptions: IntersectionObserverInit = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        const onScroll = (): void => {
+            navbar.classList.toggle('scrolled', window.scrollY > 40);
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    }
+}
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
-            observer.unobserve(entry.target);
-        }
-    });
-}, observerOptions);
+/**
+ * Animación de entrada de elementos al hacer scroll
+ */
+function initReveal(): void {
+    const items = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+        items.forEach(el => el.classList.add('visible'));
+        return;
+    }
 
-// Observar elementos para animar
-document.querySelectorAll<HTMLElement>('.theme-card, .date-item, .speaker-card, .stat-card').forEach(el => {
-    el.style.opacity = '0';
-    el.style.transform = 'translateY(20px)';
-    el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-    observer.observe(el);
-});
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
 
-// Añadir clase para animación
-document.head.insertAdjacentHTML('beforeend', `
-    <style>
-        .fade-in {
-            opacity: 1 !important;
-            transform: translateY(0) !important;
-        }
-    </style>
-`);
+    items.forEach(el => observer.observe(el));
+}
 
-// ===== FORMULARIO DE NEWSLETTER =====
-const newsletterForm = document.querySelector<HTMLFormElement>('.newsletter-form');
-if (newsletterForm) {
-    newsletterForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const email = newsletterForm.querySelector<HTMLInputElement>('input[type="email"]')?.value ?? '';
+/**
+ * Cuenta regresiva hasta el 7 de junio de 2027 (hora de La Paz)
+ */
+function initCountdown(): void {
+    const days = document.getElementById('countDays');
+    const hours = document.getElementById('countHours');
+    const mins = document.getElementById('countMins');
+    if (!days || !hours || !mins) return;
 
-        // Aquí iría la lógica para enviar el email a un servidor
-        alert(`¡Gracias por suscribirte! Te enviaremos novedades a: ${email}`);
-        newsletterForm.reset();
+    const target = new Date('2027-06-07T09:00:00-04:00').getTime();
+
+    const update = (): void => {
+        const diff = Math.max(0, target - Date.now());
+        days.textContent = String(Math.floor(diff / 86400000));
+        hours.textContent = String(Math.floor((diff % 86400000) / 3600000)).padStart(2, '0');
+        mins.textContent = String(Math.floor((diff % 3600000) / 60000)).padStart(2, '0');
+    };
+
+    update();
+    setInterval(update, 30000);
+}
+
+/**
+ * Pestañas por día en la página de programa
+ */
+function initProgramTabs(): void {
+    const buttons = document.querySelectorAll<HTMLButtonElement>('.tab-btn');
+    if (!buttons.length) return;
+
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            buttons.forEach(b => {
+                b.classList.toggle('active', b === btn);
+                b.setAttribute('aria-selected', String(b === btn));
+            });
+            document.querySelectorAll('.schedule-day').forEach(day => {
+                day.classList.toggle('active', day.id === btn.dataset.day);
+            });
+        });
     });
 }
 
-// ===== CERRAR MENÚ AL HACER CLICK EN UN ENLACE =====
-document.querySelectorAll('.nav-menu a').forEach(link => {
-    link.addEventListener('click', () => {
-        if (menuToggle && navMenu && navMenu.classList.contains('active')) {
-            menuToggle.classList.remove('active');
-            navMenu.classList.remove('active');
-            document.body.style.overflow = '';
-        }
-    });
-});
+/**
+ * Formulario de contacto (el envío en línea aún no está habilitado)
+ */
+function initContactForm(): void {
+    const form = document.getElementById('contactForm') as HTMLFormElement | null;
+    const feedback = document.getElementById('contactFeedback');
+    if (!form || !feedback) return;
 
-// ===== SUAVIZAR SCROLL PARA ENLACES INTERNOS =====
-document.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
+    form.addEventListener('submit', (e) => {
         e.preventDefault();
-        const href = this.getAttribute('href');
-        const target = href && href.length > 1 ? document.querySelector(href) : null;
-        if (target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+        feedback.hidden = false;
+        feedback.textContent = 'Gracias por tu interés. El envío de mensajes en línea se habilitará próximamente; mientras tanto, guarda tu consulta y vuelve a intentarlo más adelante.';
     });
-});
+}

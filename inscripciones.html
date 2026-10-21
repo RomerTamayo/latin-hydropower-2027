@@ -3,703 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscripciones - LAHS 2025</title>
+    <title>Inscripciones | LAHS 2027</title>
+    <meta name="description" content="Tarifas e inscripciones para el VII Latin American Hydropower and Systems Meeting 2027 en La Paz, Bolivia.">
+    <meta name="theme-color" content="#03045e">
+    <link rel="icon" type="image/svg+xml" href="/src/assets/img/logos/lhp-mark.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-container">
-                    <a href="index.html" class="logo">
-                        <span class="logo-icon">⚡</span>
-                        <span class="logo-text">LAHS 2025</span>
-                    </a>
-                    
-                    <button class="menu-toggle" id="menuToggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    
-                    <ul class="nav-menu" id="navMenu">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="resumenes.html">Resúmenes</a></li>
-                        <li><a href="programa.html">Programa</a></li>
-                        <li><a href="inscripciones.html" class="active">Inscripciones</a></li>
-                        <li><a href="conferencistas.html">Conferencistas</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="VII Latin American Hydropower and Systems Meeting - Inicio">
+                <img class="logo-mark" src="/src/assets/img/logos/lhp-mark.svg" alt="" width="38" height="38">
+                <span class="logo-edition">VII</span>
+                <span class="logo-name"><strong>Latin<span>american</span></strong><small>HYDRO POWER AND SYSTEMS</small></span>
+                <span class="logo-meeting">MEETING</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav aria-label="Principal">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Bienvenida</a></li>
+                    <li><a href="resumenes.html">Resúmenes</a></li>
+                    <li><a href="programa.html">Programa</a></li>
+                    <li><a href="inscripciones.html" class="active" aria-current="page">Inscripciones</a></li>
+                    <li><a href="conferencistas.html">Conferencistas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Page Header -->
-        <section class="page-header">
+    <main id="main">
+        <section class="page-header bg-salto-1">
             <div class="container">
                 <h1>Inscripciones</h1>
-                <div class="breadcrumbs">
-                    <a href="index.html">Inicio</a> / <span>Inscripciones</span>
-                </div>
             </div>
         </section>
 
-        <!-- Registration Info -->
-        <section class="registration-info section-padding">
+        <section class="section">
             <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">Registro</span>
-                    <h2 class="section-title">Tipos de inscripción y tarifas</h2>
+                <div class="table-wrap reveal">
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Público</th>
+                                <th scope="col">Inscripción temprana<small>1 de diciembre 2026 al 30 de abril 2027</small></th>
+                                <th scope="col">Inscripción tardía<small>1 al 31 de mayo 2027</small></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>General</td><td data-label="Temprana (hasta 30/04/2027)">USD 150</td><td data-label="Tardía (mayo 2027)">USD 220</td></tr>
+                            <tr><td>Estudiantes posgrado</td><td data-label="Temprana (hasta 30/04/2027)">USD 100</td><td data-label="Tardía (mayo 2027)">USD 140</td></tr>
+                            <tr><td>Estudiantes pregrado*</td><td data-label="Temprana (hasta 30/04/2027)">USD 25</td><td data-label="Tardía (mayo 2027)">USD 40</td></tr>
+                            <tr><td>Miembros IAHR</td><td data-label="Temprana (hasta 30/04/2027)">USD 126</td><td data-label="Tardía (mayo 2027)">USD 180</td></tr>
+                            <tr><td>Miembros Grupo de Trabajo Latinoamericano del Comité de Máquinas Hidráulicas y Sistemas</td><td data-label="Temprana (hasta 30/04/2027)">USD 126</td><td data-label="Tardía (mayo 2027)">USD 180</td></tr>
+                        </tbody>
+                    </table>
                 </div>
 
-                <!-- Tarifas -->
-                <div class="pricing-grid">
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h3>Profesional</h3>
-                            <div class="price">
-                                <span class="currency">USD</span>
-                                <span class="amount">400</span>
-                            </div>
-                        </div>
-                        <div class="pricing-body">
-                            <ul class="pricing-features">
-                                <li>✓ Acceso a todas las sesiones</li>
-                                <li>✓ Material del congreso</li>
-                                <li>✓ Coffee breaks</li>
-                                <li>✓ Cóctel de bienvenida</li>
-                                <li>✓ Certificado de asistencia</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="#registration-form" class="btn btn-primary">Inscribirme</a>
-                        </div>
-                    </div>
-
-                    <div class="pricing-card featured">
-                        <div class="pricing-badge">Recomendado</div>
-                        <div class="pricing-header">
-                            <h3>Estudiante</h3>
-                            <div class="price">
-                                <span class="currency">USD</span>
-                                <span class="amount">200</span>
-                            </div>
-                        </div>
-                        <div class="pricing-body">
-                            <ul class="pricing-features">
-                                <li>✓ Acceso a todas las sesiones</li>
-                                <li>✓ Material del congreso digital</li>
-                                <li>✓ Coffee breaks</li>
-                                <li>✓ Cóctel de bienvenida</li>
-                                <li>✓ Certificado de asistencia</li>
-                                <li class="note">* Requiere acreditación estudiantil</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="#registration-form" class="btn btn-primary">Inscribirme</a>
-                        </div>
-                    </div>
-
-                    <div class="pricing-card">
-                        <div class="pricing-header">
-                            <h3>Acompañante</h3>
-                            <div class="price">
-                                <span class="currency">USD</span>
-                                <span class="amount">150</span>
-                            </div>
-                        </div>
-                        <div class="pricing-body">
-                            <ul class="pricing-features">
-                                <li>✓ Acceso a sesiones sociales</li>
-                                <li>✓ Cóctel de bienvenida</li>
-                                <li>✓ Coffee breaks</li>
-                                <li>✓ Tour por Montevideo</li>
-                                <li>✗ Acceso a sesiones técnicas</li>
-                            </ul>
-                        </div>
-                        <div class="pricing-footer">
-                            <a href="#registration-form" class="btn btn-primary">Inscribirme</a>
-                        </div>
-                    </div>
+                <div class="panel reveal">
+                    <p>El costo de inscripción <strong>no incluye la cena</strong>. Tarifas y fechas referenciales, sujetas a confirmación por el comité organizador.</p>
                 </div>
 
-                <!-- Fechas de inscripción -->
-                <div class="registration-dates">
-                    <h3>Fechas de inscripción</h3>
-                    <div class="dates-grid">
-                        <div class="date-box">
-                            <span class="date-label">Inscripción temprana</span>
-                            <span class="date-range">15 Feb - 10 Set 2025</span>
-                            <span class="date-price">-20% descuento</span>
-                        </div>
-                        <div class="date-box">
-                            <span class="date-label">Inscripción regular</span>
-                            <span class="date-range">11 Set - 30 Set 2025</span>
-                            <span class="date-price">Precio estándar</span>
-                        </div>
-                        <div class="date-box">
-                            <span class="date-label">Inscripción tardía</span>
-                            <span class="date-range">1 Oct - 19 Oct 2025</span>
-                            <span class="date-price">+10% recargo</span>
-                        </div>
-                    </div>
+                <div class="center mt reveal">
+                    <a href="#" class="btn btn-primary" aria-disabled="true">Inscripciones próximamente</a>
+                </div>
+
+                <div class="panel reveal">
+                    <h3>Medios de pago</h3>
+                    <h4>Residentes en Bolivia</h4>
+                    <p>El pago de la inscripción podrá realizarse mediante transferencia bancaria. Los datos de la cuenta se publicarán al abrir el período de inscripciones.</p>
+                    <h4>No residentes</h4>
+                    <p>El pago de la inscripción podrá realizarse con tarjeta de crédito a través de una plataforma segura. El enlace de pago se publicará próximamente.</p>
+                    <p>Conserva el comprobante de pago: necesitarás adjuntarlo al formulario cuando realices la inscripción.</p>
+                </div>
+
+                <div class="panel reveal">
+                    <p>* Existe la posibilidad de otorgar becas para estudiantes de pregrado. Para solicitarla, comunícate con el comité organizador a través de la página de <a href="contacto.html">contacto</a>.</p>
                 </div>
             </div>
         </section>
 
-        <!-- Registration Form -->
-        <section class="registration-form-section bg-light section-padding" id="registration-form">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">Formulario</span>
-                    <h2 class="section-title">Completa tu inscripción</h2>
-                </div>
-
-                <div class="form-wrapper">
-                    <form id="registrationForm" class="registration-form">
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="firstname">Nombres *</label>
-                                <input type="text" id="firstname" name="firstname" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="lastname">Apellidos *</label>
-                                <input type="text" id="lastname" name="lastname" required>
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="email">Email *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Teléfono</label>
-                                <input type="tel" id="phone" name="phone">
-                            </div>
-                        </div>
-
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="country">País *</label>
-                                <select id="country" name="country" required>
-                                    <option value="">Selecciona un país</option>
-                                    <option value="UY">Uruguay</option>
-                                    <option value="AR">Argentina</option>
-                                    <option value="BR">Brasil</option>
-                                    <option value="CL">Chile</option>
-                                    <option value="PY">Paraguay</option>
-                                    <option value="BO">Bolivia</option>
-                                    <option value="PE">Perú</option>
-                                    <option value="EC">Ecuador</option>
-                                    <option value="CO">Colombia</option>
-                                    <option value="VE">Venezuela</option>
-                                    <option value="MX">México</option>
-                                    <option value="ES">España</option>
-                                    <option value="PT">Portugal</option>
-                                    <option value="US">Estados Unidos</option>
-                                    <option value="OTRO">Otro</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="city">Ciudad</label>
-                                <input type="text" id="city" name="city">
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="institution">Institución / Empresa *</label>
-                            <input type="text" id="institution" name="institution" required>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="category">Categoría de inscripción *</label>
-                            <select id="category" name="category" required>
-                                <option value="">Selecciona una categoría</option>
-                                <option value="professional">Profesional - USD 400</option>
-                                <option value="student">Estudiante - USD 200</option>
-                                <option value="accompanying">Acompañante - USD 150</option>
-                            </select>
-                        </div>
-
-                        <div class="form-group student-field" style="display: none;">
-                            <label for="studentId">Carnet de estudiante / Certificación *</label>
-                            <input type="file" id="studentId" name="studentId" accept=".pdf,.jpg,.jpeg,.png">
-                            <small>Adjunta documento que acredite tu condición de estudiante</small>
-                        </div>
-
-                        <div class="form-group">
-                            <label>Requerimientos especiales</label>
-                            <div class="checkbox-group">
-                                <label>
-                                    <input type="checkbox" name="dietary" value="vegetarian"> Dieta vegetariana/vegana
-                                </label>
-                                <label>
-                                    <input type="checkbox" name="dietary" value="allergies"> Alergias alimentarias
-                                </label>
-                                <label>
-                                    <input type="checkbox" name="accessibility" value="accessibility"> Necesidades de accesibilidad
-                                </label>
-                            </div>
-                        </div>
-
-                        <div class="form-group">
-                            <label for="comments">Comentarios adicionales</label>
-                            <textarea id="comments" name="comments" rows="3"></textarea>
-                        </div>
-
-                        <div class="form-group terms-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="terms" required>
-                                Acepto los <a href="#" target="_blank">términos y condiciones</a> de la inscripción *
-                            </label>
-                        </div>
-
-                        <div class="form-group terms-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="privacy" required>
-                                Acepto la <a href="#" target="_blank">política de privacidad</a> y tratamiento de datos *
-                            </label>
-                        </div>
-
-                        <div class="form-group terms-group">
-                            <label class="checkbox-label">
-                                <input type="checkbox" name="newsletter" checked>
-                                Deseo recibir información sobre futuros eventos
-                            </label>
-                        </div>
-
-                        <div class="form-submit">
-                            <button type="submit" class="btn btn-primary btn-large">Completar inscripción</button>
-                            <p class="form-note">* Campos obligatorios</p>
-                        </div>
-                    </form>
-
-                    <div class="payment-info">
-                        <h3>Información de pago</h3>
-                        <div class="payment-methods">
-                            <h4>Métodos de pago aceptados:</h4>
-                            <ul>
-                                <li>💳 Tarjeta de crédito (Visa, MasterCard, American Express)</li>
-                                <li>💵 Transferencia bancaria internacional</li>
-                                <li>🏦 Depósito en cuenta</li>
-                                <li>💰 Pago en efectivo (solo en Uruguay)</li>
-                            </ul>
-                            
-                            <div class="bank-details">
-                                <h4>Datos bancarios:</h4>
-                                <p><strong>Banco:</strong> Banco República (BROU)</p>
-                                <p><strong>Titular:</strong> Latin American Hydropower Association</p>
-                                <p><strong>Cuenta:</strong> 123-456-789</p>
-                                <p><strong>SWIFT:</strong> BROUUYMM</p>
-                                <p><strong>IBAN:</strong> UY12345678901234567890</p>
-                            </div>
-                            
-                            <p class="payment-note">* Una vez realizado el pago, envía el comprobante a <strong>pagos@latinhydropower2025.org</strong></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="faq-section section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">Preguntas frecuentes</span>
-                    <h2 class="section-title">¿Dudas sobre la inscripción?</h2>
-                </div>
-
-                <div class="faq-grid">
-                    <div class="faq-item">
-                        <h3>¿Puedo modificar mi inscripción después de pagar?</h3>
-                        <p>Sí, puedes modificar los datos de tu inscripción hasta 15 días antes del evento enviando un email a inscripciones@latinhydropower2025.org</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>¿Hay descuentos para grupos?</h3>
-                        <p>Sí, ofrecemos descuentos para grupos de 5 o más personas de la misma institución. Contacta a grupos@latinhydropower2025.org para más información.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>¿Cómo obtengo mi factura?</h3>
-                        <p>Las facturas se emiten automáticamente después de confirmar el pago y se envían al email registrado.</p>
-                    </div>
-
-                    <div class="faq-item">
-                        <h3>¿Puedo cancelar mi inscripción?</h3>
-                        <p>Las cancelaciones con 30 días de anticipación tienen reembolso del 80%. Consulte nuestra política de cancelación para más detalles.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="footer">
-        <!-- Mismo footer que index.html -->
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-info">
-                    <div class="footer-logo">⚡ LAHS 2025</div>
-                    <p>VI Latin American Hydropower<br>and Systems Meeting</p>
-                    <p>Montevideo, Uruguay</p>
+            <div class="logo-group">
+                <h3 class="logo-group-title">Sponsors:</h3>
+                <div class="logos sponsors">
+                    <a href="https://www.saltogrande.org/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/salto-grande.svg" alt="Salto Grande" class="logo-vector" width="200" height="84" loading="lazy"></a>
+                    <a href="https://www.cfdsupport.com/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/cfd-support.webp" alt="CFD Support" loading="lazy"></a>
+                    <a href="https://www.ute.com.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ute.webp" alt="UTE" loading="lazy"></a>
+                    <a href="https://ciemsa.com.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ciemsa.webp" alt="CIEMSA" loading="lazy"></a>
+                    <a href="https://investigacion.udelar.edu.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/csic.webp" alt="CSIC - Comisión Sectorial de Investigación Científica" loading="lazy"></a>
                 </div>
-                
-                <div class="footer-links">
-                    <h4>Enlaces rápidos</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="resumenes.html">Resúmenes</a></li>
-                        <li><a href="programa.html">Programa</a></li>
-                        <li><a href="inscripciones.html">Inscripciones</a></li>
-                    </ul>
+            </div>
+            <div class="logo-group">
+                <h3 class="logo-group-title">Declarado de interés por:</h3>
+                <div class="logos interest">
+                    <a href="https://www.aiu.org.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/aiu.webp" alt="Asociación de Ingenieros del Uruguay" loading="lazy"></a>
+                    <a href="https://www.anii.org.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/anii.webp" alt="ANII - Agencia Nacional de Investigación e Innovación" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-turismo/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/uruguay-natural.webp" alt="Uruguay Natural - Ministerio de Turismo" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-industria-energia-mineria/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/miem.webp" alt="Ministerio de Industria, Energía y Minería" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-ambiente/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ministerio-ambiente.webp" alt="Ministerio de Ambiente" loading="lazy"></a>
                 </div>
-                
-                <div class="footer-links">
-                    <h4>Información</h4>
-                    <ul>
-                        <li><a href="conferencistas.html">Conferencistas</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-social">
-                    <h4>Síguenos</h4>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Twitter">𝕏</a>
-                        <a href="#" aria-label="LinkedIn">in</a>
-                        <a href="#" aria-label="Facebook">f</a>
+            </div>
+            <div class="logo-group">
+                <h3 class="logo-group-title">Organizan</h3>
+                <div class="footer-bottom">
+                    <div class="logos organizers">
+                    <img src="/src/assets/img/logos/iahr-latinamerican.webp" alt="IAHR - Latinamerican Working Group" loading="lazy">
+                    <img src="/src/assets/img/logos/fundacion-ricaldoni.webp" alt="Fundación Julio Ricaldoni" loading="lazy">
+                    <img src="/src/assets/img/logos/imfia.webp" alt="IMFIA" loading="lazy">
+                    <img src="/src/assets/img/logos/facultad-ingenieria.webp" alt="Facultad de Ingeniería" loading="lazy">
+                    </div>
+                    <div class="footer-event">
+                        <a href="contacto.html" class="btn btn-primary">Contacto</a>
+                        <p>VII Latin American Hydropower and Systems Meeting</p>
+                        <p>Del 7 al 11 de junio de 2027 &middot; La Paz, Bolivia</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 VI Latin American Hydropower and Systems Meeting. Todos los derechos reservados.</p>
-            </div>
+        </div>
+        <div class="footer-credits">
+            <img src="/src/assets/img/logos/fatum.webp" alt="Secretaría: FATUM" loading="lazy">
         </div>
     </footer>
 
     <script type="module" src="/src/main.ts"></script>
-    <script>
-        // Estilos adicionales para esta página
-        const style = document.createElement('style');
-        style.textContent = `
-            .pricing-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-                gap: 2rem;
-                margin: 3rem 0;
-            }
-
-            .pricing-card {
-                background-color: var(--white);
-                border-radius: 16px;
-                overflow: hidden;
-                box-shadow: var(--shadow);
-                transition: var(--transition);
-                position: relative;
-            }
-
-            .pricing-card:hover {
-                transform: translateY(-5px);
-                box-shadow: var(--shadow-lg);
-            }
-
-            .pricing-card.featured {
-                transform: scale(1.05);
-                border: 2px solid var(--accent);
-                z-index: 2;
-            }
-
-            .pricing-badge {
-                position: absolute;
-                top: 12px;
-                right: 12px;
-                background-color: var(--accent);
-                color: var(--primary-dark);
-                padding: 0.3rem 1rem;
-                border-radius: 50px;
-                font-size: 0.8rem;
-                font-weight: 600;
-            }
-
-            .pricing-header {
-                background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-                color: var(--white);
-                padding: 2rem;
-                text-align: center;
-            }
-
-            .pricing-header h3 {
-                font-size: 1.5rem;
-                margin-bottom: 1rem;
-            }
-
-            .price {
-                display: flex;
-                align-items: baseline;
-                justify-content: center;
-                gap: 0.3rem;
-            }
-
-            .currency {
-                font-size: 1.2rem;
-                font-weight: 400;
-            }
-
-            .amount {
-                font-size: 3rem;
-                font-weight: 700;
-                line-height: 1;
-            }
-
-            .pricing-body {
-                padding: 2rem;
-            }
-
-            .pricing-features {
-                list-style: none;
-            }
-
-            .pricing-features li {
-                margin-bottom: 0.8rem;
-                color: var(--text-light);
-            }
-
-            .pricing-features .note {
-                font-size: 0.85rem;
-                color: var(--accent);
-                margin-top: 1rem;
-            }
-
-            .pricing-footer {
-                padding: 0 2rem 2rem;
-                text-align: center;
-            }
-
-            .registration-dates {
-                margin: 4rem 0 2rem;
-                text-align: center;
-            }
-
-            .dates-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-                gap: 2rem;
-                margin-top: 2rem;
-            }
-
-            .date-box {
-                background-color: var(--white);
-                padding: 2rem;
-                border-radius: 12px;
-                box-shadow: var(--shadow);
-            }
-
-            .date-label {
-                display: block;
-                font-size: 1.2rem;
-                font-weight: 600;
-                color: var(--primary-dark);
-                margin-bottom: 0.5rem;
-            }
-
-            .date-range {
-                display: block;
-                font-size: 1rem;
-                color: var(--accent);
-                margin-bottom: 0.5rem;
-            }
-
-            .date-price {
-                display: inline-block;
-                background-color: var(--bg-light);
-                padding: 0.3rem 1rem;
-                border-radius: 50px;
-                font-size: 0.9rem;
-            }
-
-            .form-wrapper {
-                display: grid;
-                grid-template-columns: 2fr 1fr;
-                gap: 3rem;
-                background-color: var(--white);
-                border-radius: 16px;
-                padding: 3rem;
-                box-shadow: var(--shadow-lg);
-            }
-
-            .registration-form {
-                border-right: 1px solid var(--border);
-                padding-right: 3rem;
-            }
-
-            .form-row {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 1.5rem;
-            }
-
-            .checkbox-group {
-                display: flex;
-                flex-direction: column;
-                gap: 0.5rem;
-                margin-top: 0.5rem;
-            }
-
-            .checkbox-group label {
-                display: flex;
-                align-items: center;
-                gap: 0.5rem;
-                font-weight: normal;
-            }
-
-            .checkbox-label {
-                display: flex;
-                align-items: center;
-                gap: 0.5rem;
-                font-weight: normal;
-            }
-
-            .checkbox-label a {
-                color: var(--accent);
-                text-decoration: none;
-            }
-
-            .checkbox-label a:hover {
-                text-decoration: underline;
-            }
-
-            .payment-info {
-                position: sticky;
-                top: 100px;
-            }
-
-            .payment-info h3 {
-                color: var(--primary-dark);
-                margin-bottom: 1.5rem;
-                font-size: 1.3rem;
-            }
-
-            .payment-methods h4 {
-                color: var(--text-dark);
-                margin: 1rem 0 0.5rem;
-            }
-
-            .payment-methods ul {
-                list-style: none;
-            }
-
-            .payment-methods li {
-                margin-bottom: 0.8rem;
-                color: var(--text-light);
-            }
-
-            .bank-details {
-                background-color: var(--bg-light);
-                padding: 1.5rem;
-                border-radius: 8px;
-                margin: 1.5rem 0;
-            }
-
-            .bank-details p {
-                margin-bottom: 0.5rem;
-                font-size: 0.9rem;
-            }
-
-            .payment-note {
-                font-size: 0.9rem;
-                color: var(--accent);
-                font-weight: 500;
-            }
-
-            .btn-large {
-                padding: 1rem 3rem;
-                font-size: 1.1rem;
-            }
-
-            .form-note {
-                margin-top: 1rem;
-                color: var(--text-light);
-                font-size: 0.9rem;
-            }
-
-            .faq-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 2rem;
-                margin-top: 3rem;
-            }
-
-            .faq-item {
-                background-color: var(--white);
-                padding: 2rem;
-                border-radius: 12px;
-                box-shadow: var(--shadow);
-            }
-
-            .faq-item h3 {
-                color: var(--primary-dark);
-                margin-bottom: 1rem;
-                font-size: 1.2rem;
-            }
-
-            .faq-item p {
-                color: var(--text-light);
-                line-height: 1.6;
-            }
-
-            @media (max-width: 968px) {
-                .form-wrapper {
-                    grid-template-columns: 1fr;
-                }
-                
-                .registration-form {
-                    border-right: none;
-                    padding-right: 0;
-                }
-            }
-
-            @media (max-width: 768px) {
-                .form-row {
-                    grid-template-columns: 1fr;
-                }
-                
-                .pricing-card.featured {
-                    transform: scale(1);
-                }
-            }
-        `;
-        document.head.appendChild(style);
-
-        // Mostrar campo de estudiante cuando se selecciona esa categoría
-        document.getElementById('category').addEventListener('change', function() {
-            const studentField = document.querySelector('.student-field');
-            if (this.value === 'student') {
-                studentField.style.display = 'block';
-                document.getElementById('studentId').setAttribute('required', 'required');
-            } else {
-                studentField.style.display = 'none';
-                document.getElementById('studentId').removeAttribute('required');
-            }
-        });
-
-        // Manejo del formulario
-        document.getElementById('registrationForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Aquí iría la lógica para enviar los datos al servidor
-            alert('¡Gracias por tu inscripción! Te enviaremos un email con los detalles del pago.');
-            
-            // Simular redirección a pasarela de pago
-            if (confirm('¿Deseas proceder al pago ahora?')) {
-                window.open('https://www.paypal.com', '_blank');
-            }
-        });
-    </script>
 </body>
 </html>

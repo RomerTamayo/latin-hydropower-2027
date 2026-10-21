@@ -3,330 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VIi Latin American Hydropower 2027 - Inicio</title>
-    <link rel="stylesheet" href="/src/styles/style.css">
+    <title>VII Latin American Hydropower and Systems Meeting | LAHS 2027</title>
+    <meta name="description" content="VII Latin American Hydropower and Systems Meeting, del 7 al 11 de junio de 2027 en La Paz, Bolivia.">
+    <meta name="theme-color" content="#03045e">
+    <link rel="icon" type="image/svg+xml" href="/src/assets/img/logos/lhp-mark.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/src/styles/style.css">
 </head>
 <body>
-    <!-- Header / Navegación -->
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-container">
-                    <a href="index.html" class="logo">
-                        <span class="logo-icon">⚡</span>
-                        <span class="logo-text">LAHS 2027</span>
-                    </a>
-                    
-                    <button class="menu-toggle" id="menuToggle" aria-label="Menú">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    
-                    <ul class="nav-menu" id="navMenu">
-                        <li><a href="index.html" class="active">Inicio</a></li>
-                        <li><a href="resumenes.html">Resúmenes</a></li>
-                        <li><a href="programa.html">Programa</a></li>
-                        <li><a href="inscripciones.html">Inscripciones</a></li>
-                        <li><a href="conferencistas.html">Conferencistas</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        
-        <div class="hero">
-            <div class="container">
-                <div class="hero-content">
-                    <span class="hero-tag">7 - 11 JUNIO 2027</span>
-                    <h1 class="hero-title">VII Latin American<br>Hydropower and Systems<br>Meeting</h1>
-                    <p class="hero-subtitle">La Paz, BOLIVIA</p>
-                    <div class="hero-buttons">
-                        <a href="inscripciones.html" class="btn btn-primary">Inscribirme</a>
-                        <a href="resumenes.html" class="btn btn-outline">Enviar resumen</a>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-overlay"></div>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="VII Latin American Hydropower and Systems Meeting - Inicio">
+                <img class="logo-mark" src="/src/assets/img/logos/lhp-mark.svg" alt="" width="38" height="38">
+                <span class="logo-edition">VII</span>
+                <span class="logo-name"><strong>Latin<span>american</span></strong><small>HYDRO POWER AND SYSTEMS</small></span>
+                <span class="logo-meeting">MEETING</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav aria-label="Principal">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html" class="active" aria-current="page">Bienvenida</a></li>
+                    <li><a href="resumenes.html">Resúmenes</a></li>
+                    <li><a href="programa.html">Programa</a></li>
+                    <li><a href="inscripciones.html">Inscripciones</a></li>
+                    <li><a href="conferencistas.html">Conferencistas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
         </div>
     </header>
 
-    <!-- Bienvenida -->
-    <section class="welcome section-padding">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Bienvenidos</span>
-                <h2 class="section-title">VII Latin American Hydropower and Systems Meeting</h2>
-            </div>
-            
-            <div class="welcome-content">
-                <div class="welcome-text">
-                    <p class="welcome-intro">Nos complace anunciar que esta edición se llevará a cabo en la ciudad de La Paz, BOLIVIA, entre el <strong>7 y el 11 de mayo de 2027</strong>.</p>
-                    
-                    <p>Este evento reúne a investigadores, profesionales, estudiantes y empresas del sector hidroenergético para compartir los últimos avances en el desarrollo, operación y sostenibilidad de los sistemas hidroeléctricos.</p>
-                    
-                    <p>En el marco de este encuentro, exploraremos temas claves como modelación física y numérica de turbomáquinas, diseño y fabricación de turbinas, mantenimiento, cavitación, energía hidráulica no convencional, gestión de embalses, ciencia de datos para monitoreo, entre otros. Además, será una excelente oportunidad para fortalecer la colaboración entre países latinoamericanos en un sector estratégico para el desarrollo sostenible.</p>
-                    
-                    <div class="welcome-highlight">
-                        <p>Uruguay cuenta con algunas de las grandes centrales hidroeléctricas más antiguas de la región, las cuales se encuentran en procesos de renovación. Además, el país está posicionado en la vanguardia en la participación de fuentes renovables en su matriz energética, con una alta tasa de energía eólica, lo que ha implicado una redefinición del rol de las grandes centrales hidroeléctricas.</p>
-                    </div>
-                    
-                    <p>Montevideo, con su rica historia, vibrante cultura y vistas al Río de la Plata, será el escenario perfecto para fomentar el intercambio de ideas y el crecimiento de nuestra comunidad.</p>
-                    
-                    <p class="welcome-cta">¡Esperamos verte en La Paz en Junio de 2027!</p>
-                </div>
-                
-                <div class="welcome-stats">
-                    <div class="stat-card">
-                        <span class="stat-number">10+</span>
-                        <span class="stat-label">Ejes Temáticos</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">5</span>
-                        <span class="stat-label">Días de Conferencia</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">30+</span>
-                        <span class="stat-label">Conferencistas</span>
-                    </div>
-                    <div class="stat-card">
-                        <span class="stat-number">500+</span>
-                        <span class="stat-label">Asistentes</span>
+    <main id="main">
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <span class="hero-year">2027</span>
+                    <h1>VII Latin American Hydropower and Systems Meeting</h1>
+                    <p class="hero-meta">Del 7 al 11 de junio de 2027<br>La Paz, Bolivia</p>
+                    <div class="hero-actions">
+                        <a href="inscripciones.html" class="btn btn-hero">Inscríbete</a>
+                        <div class="countdown" aria-label="Tiempo restante para el evento">
+                            <div><strong id="countDays">--</strong><span>Días</span></div>
+                            <div><strong id="countHours">--</strong><span>Horas</span></div>
+                            <div><strong id="countMins">--</strong><span>Min</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Ejes Temáticos -->
-    <section class="themes section-padding bg-light">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Áreas de interés</span>
-                <h2 class="section-title">Ejes Temáticos</h2>
-            </div>
-            
-            <div class="themes-grid">
-                <div class="theme-card">
-                    <div class="theme-icon">🔧</div>
-                    <h3>Modelación física y numérica</h3>
-                    <p>De máquinas y obras hidráulicas</p>
+        <section class="section">
+            <div class="container welcome-grid">
+                <div class="welcome-text reveal">
+                    <h2>Bienvenida</h2>
+                    <p class="lead">¡Bienvenidos al VII Latin American Hydropower and Systems Meeting!</p>
+                    <p>Nos complace anunciar que esta edición se llevará a cabo en la ciudad de La Paz, Bolivia, entre el 7 y el 11 de junio de 2027. Este evento reúne a investigadores, profesionales, estudiantes y empresas del sector hidroenergético para compartir los últimos avances en el desarrollo, operación y sostenibilidad de los sistemas hidroeléctricos.</p>
+                    <p>En el marco de este encuentro exploraremos temas clave como la modelación física y numérica de turbomáquinas, el diseño y fabricación de turbinas y componentes, el mantenimiento, reparación y repotenciación de turbinas hidráulicas, la cavitación y las oscilaciones en turbomáquinas, la energía hidráulica no convencional y marina, la gestión de embalses hidroeléctricos y la ciencia de datos para el monitoreo de máquinas hidráulicas, entre otros. Además, será una excelente oportunidad para fortalecer la colaboración entre países latinoamericanos en un sector estratégico para el desarrollo sostenible.</p>
+                    <p>Bolivia cuenta con un importante potencial hidroenergético gracias a la cordillera de los Andes y a sus grandes cuencas, y la hidroelectricidad ocupa un lugar central en la expansión de su matriz energética renovable. Este contexto ofrece un escenario ideal para debatir los desafíos de diseño, operación y renovación de centrales hidroeléctricas en la región.</p>
+                    <p>La Paz, con su rica historia, su vibrante cultura y sus imponentes paisajes andinos al pie del Illimani, será el escenario perfecto para fomentar el intercambio de ideas y el crecimiento de nuestra comunidad.</p>
+                    <p class="closing">¡Esperamos verte en La Paz en junio de 2027!</p>
                 </div>
-                
-                <div class="theme-card">
-                    <div class="theme-icon">⚙️</div>
-                    <h3>Diseño y fabricación</h3>
-                    <p>De turbinas y componentes</p>
-                </div>
-                
-                <div class="theme-card">
-                    <div class="theme-icon">🛠️</div>
-                    <h3>Mantenimiento y reparación</h3>
-                    <p>Repotenciación de centrales hidroeléctricas</p>
-                </div>
-                
-                <div class="theme-card">
-                    <div class="theme-icon">💧</div>
-                    <h3>Cavitación y oscilaciones</h3>
-                    <p>En máquinas hidráulicas</p>
-                </div>
-                
-                <div class="theme-card">
-                    <div class="theme-icon">🏞️</div>
-                    <h3>Aprovechamientos hidroenergéticos</h3>
-                    <p>Gestión y optimización</p>
-                </div>
-                
-                <div class="theme-card">
-                    <div class="theme-icon">🌊</div>
-                    <h3>Energía hidráulica no convencional</h3>
-                    <p>Marina y nuevas tecnologías</p>
-                </div>
-                
-                <div class="theme-card">
-                    <div class="theme-icon">📟</div>
-                    <h3>Sistemas de control</h3>
-                    <p>De máquinas hidráulicas</p>
-                </div>
-                
-                <div class="theme-card">
-                    <div class="theme-icon">🗺️</div>
-                    <h3>Gestión de embalses</h3>
-                    <p>Hidroeléctricos y multiuso</p>
-                </div>
-                
-                <div class="theme-card">
-                    <div class="theme-icon">💦</div>
-                    <h3>Sistemas de bombeo</h3>
-                    <p>Almacenamiento y eficiencia</p>
-                </div>
-                
-                <div class="theme-card">
-                    <div class="theme-icon">📊</div>
-                    <h3>Ciencia de datos</h3>
-                    <p>Para monitoreo de máquinas hidráulicas</p>
+                <div class="reveal">
+                    <span class="section-label">Ejes temáticos:</span>
+                    <div class="themes-grid">
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/modelado.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Modelación física y numérica de máquinas y obras hidráulicas</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/fabricacion.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Diseño y fabricación de turbinas y componentes</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/reparacion-maquinas.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Mantenimiento, reparación y repotenciación de centrales hidroeléctricas</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/oscilacion.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Cavitación y oscilaciones en máquinas hidráulicas</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/aprovechamiento.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Aprovechamientos hidroenergéticos</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/energia-marina.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Energía hidráulica no convencional y marina</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/sistema-control.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Sistemas de control de máquinas hidráulicas</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/embalses.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Gestión de embalses hidroeléctricos</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/bombeo.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Sistemas de bombeo</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/data-science.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Ciencia de datos para monitoreo de máquinas hidráulicas</h4>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Fechas Importantes -->
-    <section class="dates section-padding">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Calendario</span>
-                <h2 class="section-title">Fechas Importantes</h2>
-            </div>
-            
-            <div class="dates-timeline">
-                <div class="date-item">
-                    <div class="date-badge">Inicio</div>
-                    <div class="date-content">
-                        <span class="date-day">15 Feb 2025</span>
-                        <h4>Apertura llamado a resúmenes extendidos</h4>
+        <section class="section section-soft">
+            <div class="container">
+                <div class="feature-row reveal">
+                    <a href="https://latinhydropower2025.org/photo-gallery/" target="_blank" rel="noopener noreferrer" class="photo-card bg-represa-2">
+                        <h3>Photo Gallery<small>Revive la edición 2025 en Montevideo</small></h3>
+                    </a>
+                    <div class="info-card">
+                        <div class="info-card-media bg-salto-4"></div>
+                        <div class="info-card-body">
+                            <h4>Cena del congreso</h4>
+                            <p>Fecha, lugar y costo por confirmar.</p>
+                            <p>Muy pronto publicaremos la información para registrarte.</p>
+                        </div>
                     </div>
                 </div>
-                
-                <div class="date-item">
-                    <div class="date-badge">Cierre</div>
-                    <div class="date-content">
-                        <span class="date-day">21 Ago 2025</span>
-                        <h4>Cierre llamado a resúmenes extendidos</h4>
-                    </div>
-                </div>
-                
-                <div class="date-item">
-                    <div class="date-badge">Notificación</div>
-                    <div class="date-content">
-                        <span class="date-day">10 Abril 2027</span>
-                        <h4>Notificación a autores</h4>
-                    </div>
-                </div>
-                
-                <div class="date-item">
-                    <div class="date-badge">Temprana</div>
-                    <div class="date-content">
-                        <span class="date-day">15 Feb - 10 Set 2025</span>
-                        <h4>Apertura inscripciones tempranas</h4>
-                    </div>
-                </div>
-                
-                <div class="date-item">
-                    <div class="date-badge">Tardía</div>
-                    <div class="date-content">
-                        <span class="date-day">1 Oct - 19 Oct 2025</span>
-                        <h4>Inscripciones tardías</h4>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="dates-cta">
-                <a href="resumenes.html" class="btn btn-primary">Enviar resumen</a>
-                <a href="inscripciones.html" class="btn btn-secondary">Ver inscripciones</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Conferencistas Preview -->
-    <section class="speakers-preview bg-light section-padding">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-subtitle">Próximamente</span>
-                <h2 class="section-title">Conferencistas Confirmados</h2>
-            </div>
-            
-            <div class="speakers-grid">
-                <div class="speaker-card placeholder">
-                    <div class="speaker-image"></div>
-                    <h4>Conferencista 1</h4>
-                    <p>Por confirmar</p>
+                <div class="cards-3">
+                    <a href="programa.html" class="dark-card bg-represa-1 reveal">
+                        <span>Curso pre-congreso:</span>
+                        <strong>Próximamente</strong>
+                    </a>
+                    <a href="programa.html" class="dark-card bg-represa-3 reveal">
+                        <span>Curso pre-congreso:</span>
+                        <strong>Próximamente</strong>
+                    </a>
+                    <a href="programa.html" class="dark-card bg-represa-4 reveal">
+                        <span>Visita técnica:</span>
+                        <strong>Central hidroeléctrica por confirmar</strong>
+                    </a>
                 </div>
-                
-                <div class="speaker-card placeholder">
-                    <div class="speaker-image"></div>
-                    <h4>Conferencista 2</h4>
-                    <p>Por confirmar</p>
-                </div>
-                
-                <div class="speaker-card placeholder">
-                    <div class="speaker-image"></div>
-                    <h4>Conferencista 3</h4>
-                    <p>Por confirmar</p>
-                </div>
-                
-                <div class="speaker-card placeholder">
-                    <div class="speaker-image"></div>
-                    <h4>Conferencista 4</h4>
-                    <p>Por confirmar</p>
-                </div>
-            </div>
-            
-            <div class="speakers-cta">
-                <a href="conferencistas.html" class="btn btn-outline">Ver todos</a>
-            </div>
-        </div>
-    </section>
 
-    <!-- Newsletter -->
-    <section class="newsletter">
-        <div class="container">
-            <div class="newsletter-content">
-                <h3>¿Quieres mantenerte informado?</h3>
-                <p>Suscríbete para recibir novedades sobre el evento</p>
-                
-                <form class="newsletter-form">
-                    <input type="email" placeholder="Tu correo electrónico" required>
-                    <button type="submit" class="btn btn-primary">Suscribirme</button>
-                </form>
+                <div class="quick-links reveal">
+                    <a href="resumenes.html" class="quick-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2.5H6.5a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V8z"/><path d="M14 2.5V8h5.5M8.5 12.5h7M8.5 16h7"/></svg><span>Presentación de resúmenes</span></a>
+                    <a href="programa.html" class="quick-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M7.5 13.5h3M13.5 13.5h3M7.5 17h3"/></svg><span>Programa</span></a>
+                    <a href="inscripciones.html" class="quick-link"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L8 18l-4 1 1-4z"/><path d="M14.5 5.5l3 3M12 21h8"/></svg><span>Inscripciones</span></a>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section class="section">
+            <div class="container">
+                <div class="section-head">
+                    <span class="section-label">Fechas importantes:</span>
+                </div>
+            <div class="dates-grid">
+                <div class="date-item reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 15l2.5 2.5 4.5-5"/></svg>
+                    <h4>1 de diciembre 2026</h4>
+                    <p>Apertura llamado a resúmenes extendidos</p>
+                </div>
+                <div class="date-item reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 15l2.5 2.5 4.5-5"/></svg>
+                    <h4>28 de febrero 2027</h4>
+                    <p>Cierre llamado a resúmenes extendidos</p>
+                </div>
+                <div class="date-item reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 15l2.5 2.5 4.5-5"/></svg>
+                    <h4>10 de abril 2027</h4>
+                    <p>Notificación a autores</p>
+                </div>
+                <div class="date-item reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 15l2.5 2.5 4.5-5"/></svg>
+                    <h4>1 de diciembre 2026 al 30 de abril 2027</h4>
+                    <p>Inscripciones tempranas</p>
+                </div>
+                <div class="date-item reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 15l2.5 2.5 4.5-5"/></svg>
+                    <h4>1 de mayo al 31 de mayo 2027</h4>
+                    <p>Inscripciones tardías</p>
+                </div>
+            </div>
+                <p class="note">Fechas tentativas, sujetas a confirmación por el comité organizador.</p>
+            </div>
+        </section>
+
+        <section class="section section-soft">
+            <div class="container">
+                <div class="section-head">
+                    <h2 class="section-title">Conferencistas</h2>
+                    <p>Los conferencistas plenarios de la edición 2027 se anunciarán próximamente.</p>
+                </div>
+                <div class="speakers reveal">
+                    <div class="speaker">
+                        <div class="speaker-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7.5 8-7.5s8 3.1 8 7.5"/></svg></div>
+                        <h4>Por confirmar</h4>
+                        <p>Conferencista plenario</p>
+                    </div>
+                    <div class="speaker">
+                        <div class="speaker-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-7.5 8-7.5s8 3.1 8 7.5"/></svg></div>
+                        <h4>Por confirmar</h4>
+                        <p>Conferencista plenario</p>
+                    </div>
+                </div>
+                <div class="center mt">
+                    <a href="conferencistas.html" class="btn btn-outline">Ver conferencistas</a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
     <footer class="footer">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-info">
-                    <div class="footer-logo">⚡ LAHS 2027</div>
-                    <p>VII Latin American Hydropower<br>and Systems Meeting</p>
-                    <p>Montevideo, Uruguay</p>
+            <div class="logo-group">
+                <h3 class="logo-group-title">Sponsors:</h3>
+                <div class="logos sponsors">
+                    <a href="https://www.saltogrande.org/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/salto-grande.svg" alt="Salto Grande" class="logo-vector" width="200" height="84" loading="lazy"></a>
+                    <a href="https://www.cfdsupport.com/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/cfd-support.webp" alt="CFD Support" loading="lazy"></a>
+                    <a href="https://www.ute.com.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ute.webp" alt="UTE" loading="lazy"></a>
+                    <a href="https://ciemsa.com.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ciemsa.webp" alt="CIEMSA" loading="lazy"></a>
+                    <a href="https://investigacion.udelar.edu.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/csic.webp" alt="CSIC - Comisión Sectorial de Investigación Científica" loading="lazy"></a>
                 </div>
-                
-                <div class="footer-links">
-                    <h4>Enlaces rápidos</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="resumenes.html">Resúmenes</a></li>
-                        <li><a href="programa.html">Programa</a></li>
-                        <li><a href="inscripciones.html">Inscripciones</a></li>
-                    </ul>
+            </div>
+            <div class="logo-group">
+                <h3 class="logo-group-title">Declarado de interés por:</h3>
+                <div class="logos interest">
+                    <a href="https://www.aiu.org.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/aiu.webp" alt="Asociación de Ingenieros del Uruguay" loading="lazy"></a>
+                    <a href="https://www.anii.org.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/anii.webp" alt="ANII - Agencia Nacional de Investigación e Innovación" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-turismo/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/uruguay-natural.webp" alt="Uruguay Natural - Ministerio de Turismo" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-industria-energia-mineria/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/miem.webp" alt="Ministerio de Industria, Energía y Minería" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-ambiente/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ministerio-ambiente.webp" alt="Ministerio de Ambiente" loading="lazy"></a>
                 </div>
-                
-                <div class="footer-links">
-                    <h4>Información</h4>
-                    <ul>
-                        <li><a href="conferencistas.html">Conferencistas</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-social">
-                    <h4>Síguenos</h4>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Twitter">𝕏</a>
-                        <a href="#" aria-label="LinkedIn">in</a>
-                        <a href="#" aria-label="Facebook">f</a>
+            </div>
+            <div class="logo-group">
+                <h3 class="logo-group-title">Organizan</h3>
+                <div class="footer-bottom">
+                    <div class="logos organizers">
+                    <img src="/src/assets/img/logos/iahr-latinamerican.webp" alt="IAHR - Latinamerican Working Group" loading="lazy">
+                    <img src="/src/assets/img/logos/fundacion-ricaldoni.webp" alt="Fundación Julio Ricaldoni" loading="lazy">
+                    <img src="/src/assets/img/logos/imfia.webp" alt="IMFIA" loading="lazy">
+                    <img src="/src/assets/img/logos/facultad-ingenieria.webp" alt="Facultad de Ingeniería" loading="lazy">
+                    </div>
+                    <div class="footer-event">
+                        <a href="contacto.html" class="btn btn-primary">Contacto</a>
+                        <p>VII Latin American Hydropower and Systems Meeting</p>
+                        <p>Del 7 al 11 de junio de 2027 &middot; La Paz, Bolivia</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2027 VII Latin American Hydropower and Systems Meeting. Todos los derechos reservados.</p>
-            </div>
+        </div>
+        <div class="footer-credits">
+            <img src="/src/assets/img/logos/fatum.webp" alt="Secretaría: FATUM" loading="lazy">
         </div>
     </footer>
 

@@ -3,395 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto - LAHS 2025</title>
+    <title>Contacto | LAHS 2027</title>
+    <meta name="description" content="Contacto del comité organizador del VII Latin American Hydropower and Systems Meeting 2027 en La Paz, Bolivia.">
+    <meta name="theme-color" content="#03045e">
+    <link rel="icon" type="image/svg+xml" href="/src/assets/img/logos/lhp-mark.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-container">
-                    <a href="index.html" class="logo">
-                        <span class="logo-icon">⚡</span>
-                        <span class="logo-text">LAHS 2025</span>
-                    </a>
-                    
-                    <button class="menu-toggle" id="menuToggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    
-                    <ul class="nav-menu" id="navMenu">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="resumenes.html">Resúmenes</a></li>
-                        <li><a href="programa.html">Programa</a></li>
-                        <li><a href="inscripciones.html">Inscripciones</a></li>
-                        <li><a href="conferencistas.html">Conferencistas</a></li>
-                        <li><a href="contacto.html" class="active">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="VII Latin American Hydropower and Systems Meeting - Inicio">
+                <img class="logo-mark" src="/src/assets/img/logos/lhp-mark.svg" alt="" width="38" height="38">
+                <span class="logo-edition">VII</span>
+                <span class="logo-name"><strong>Latin<span>american</span></strong><small>HYDRO POWER AND SYSTEMS</small></span>
+                <span class="logo-meeting">MEETING</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav aria-label="Principal">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Bienvenida</a></li>
+                    <li><a href="resumenes.html">Resúmenes</a></li>
+                    <li><a href="programa.html">Programa</a></li>
+                    <li><a href="inscripciones.html">Inscripciones</a></li>
+                    <li><a href="conferencistas.html">Conferencistas</a></li>
+                    <li><a href="contacto.html" class="active" aria-current="page">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Page Header -->
-        <section class="page-header">
+    <main id="main">
+        <section class="page-header bg-la-paz">
             <div class="container">
                 <h1>Contacto</h1>
-                <div class="breadcrumbs">
-                    <a href="index.html">Inicio</a> / <span>Contacto</span>
-                </div>
             </div>
         </section>
 
-        <!-- Contact Info -->
-        <section class="contact-info section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">Comunicate con nosotros</span>
-                    <h2 class="section-title">Estamos para ayudarte</h2>
-                </div>
-
-                <div class="contact-grid">
-                    <div class="contact-card">
-                        <div class="contact-icon">📧</div>
-                        <h3>Email</h3>
-                        <p><strong>Información general:</strong><br>info@latinhydropower2025.org</p>
-                        <p><strong>Inscripciones:</strong><br>inscripciones@latinhydropower2025.org</p>
-                        <p><strong>Resúmenes:</strong><br>resumenes@latinhydropower2025.org</p>
-                        <p><strong>Patrocinios:</strong><br>sponsors@latinhydropower2025.org</p>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon">📞</div>
-                        <h3>Teléfono</h3>
-                        <p><strong>Oficina Uruguay:</strong><br>+598 1234 5678</p>
-                        <p><strong>WhatsApp:</strong><br>+598 9876 5432</p>
-                        <p class="note">Horario: Lunes a Viernes, 9:00 - 18:00 (GMT-3)</p>
-                    </div>
-
-                    <div class="contact-card">
-                        <div class="contact-icon">📍</div>
-                        <h3>Dirección</h3>
-                        <p><strong>Sede del evento:</strong><br>Centro de Conferencias LATU<br>Av. Italia 6201<br>Montevideo, Uruguay</p>
-                        <p><strong>Oficina organizadora:</strong><br>Facultad de Ingeniería - UDELAR<br>Julio Herrera y Reissig 565</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Form & Map -->
-        <section class="contact-form-section bg-light section-padding">
-            <div class="container">
-                <div class="form-map-grid">
-                    <!-- Formulario de contacto -->
-                    <div class="contact-form-wrapper">
-                        <h3>Envíanos un mensaje</h3>
-                        <form id="contactForm" class="contact-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="contact-name">Nombre completo *</label>
-                                    <input type="text" id="contact-name" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="contact-email">Email *</label>
-                                    <input type="email" id="contact-email" name="email" required>
-                                </div>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contact-subject">Asunto *</label>
-                                <input type="text" id="contact-subject" name="subject" required>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contact-department">Departamento</label>
-                                <select id="contact-department" name="department">
-                                    <option value="general">Información general</option>
-                                    <option value="inscripciones">Inscripciones</option>
-                                    <option value="resumenes">Resúmenes</option>
-                                    <option value="programa">Programa</option>
-                                    <option value="sponsors">Patrocinios</option>
-                                    <option value="otros">Otros</option>
-                                </select>
-                            </div>
-
-                            <div class="form-group">
-                                <label for="contact-message">Mensaje *</label>
-                                <textarea id="contact-message" name="message" rows="5" required></textarea>
-                            </div>
-
-                            <div class="form-group">
-                                <label class="checkbox-label">
-                                    <input type="checkbox" name="privacy" required>
-                                    Acepto la <a href="#">política de privacidad</a> *
-                                </label>
-                            </div>
-
-                            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
-                        </form>
-                    </div>
-
-                    <!-- Mapa y detalles adicionales -->
-                    <div class="map-wrapper">
-                        <h3>¿Dónde encontrarnos?</h3>
-                        <div class="map-container">
-                            <!-- Aquí iría el iframe de Google Maps -->
-                            <iframe 
-                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3271.824974267278!2d-56.17388268476144!3d-34.89459738038098!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x959f802d3b7f2b7f%3A0x53e8f3a9c7b3c9a!2sLATU%20(Laboratorio%20Tecnol%C3%B3gico%20del%20Uruguay)!5e0!3m2!1ses!2suy!4v1620000000000!5m2!1ses!2suy" 
-                                width="100%" 
-                                height="400" 
-                                style="border:0;" 
-                                allowfullscreen="" 
-                                loading="lazy">
-                            </iframe>
+        <section class="section">
+            <div class="container contact-grid">
+                <div class="form-card reveal">
+                    <h2>Envíanos un mensaje</h2>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input type="text" id="name" name="name" autocomplete="name" required>
                         </div>
-                        
-                        <div class="transport-info">
-                            <h4>Cómo llegar</h4>
-                            <ul>
-                                <li>🚌 Autobuses: Líneas 17, 21, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 116, 117, 118, 119, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300</li>
-                                <li>🚗 Estacionamiento: Parqueo disponible en el lugar</li>
-                                <li>✈️ Desde el aeropuerto: 30 minutos en auto</li>
-                            </ul>
+                        <div class="form-group">
+                            <label for="email">Dirección de correo electrónico</label>
+                            <input type="email" id="email" name="email" autocomplete="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <p class="form-feedback" id="contactFeedback" role="status" hidden></p>
+                    </form>
+                </div>
+
+                <div class="reveal">
+                    <div class="contact-list">
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="M3 6.5l9 6.5 9-6.5"/></svg>
+                            <div><h4>Correo electrónico</h4><p>Próximamente</p></div>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 1.1 4.2 2 2 0 0 1 3.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L7 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.8 2z"/></svg>
+                            <div><h4>Teléfono</h4><p>Próximamente</p></div>
+                        </div>
+                        <div class="contact-item">
+                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                            <div><h4>Sede</h4><p>Universidad Mayor de San Andrés (UMSA)<br>La Paz, Bolivia</p></div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Sponsors Section -->
-        <section class="sponsors-contact section-padding">
-            <div class="container">
-                <div class="section-header">
-                    <span class="section-subtitle">Patrocinios</span>
-                    <h2 class="section-title">¿Interesado en patrocinar?</h2>
-                </div>
-
-                <div class="sponsors-cta">
-                    <p>Descarga nuestro kit de patrocinio para conocer las oportunidades disponibles.</p>
-                    <div class="sponsor-buttons">
-                        <a href="#" class="btn btn-primary">📥 Kit de patrocinio (PDF)</a>
-                        <a href="#" class="btn btn-secondary">📊 Ver niveles de patrocinio</a>
+                    <div class="map">
+                        <iframe title="Mapa de la Universidad Mayor de San Andrés, La Paz" src="https://www.google.com/maps?q=Universidad+Mayor+de+San+Andr%C3%A9s,+La+Paz,+Bolivia&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
-                    <p class="sponsor-contact">O contáctanos directamente: <strong>sponsors@latinhydropower2025.org</strong></p>
                 </div>
             </div>
         </section>
+
     </main>
 
     <footer class="footer">
-        <!-- Mismo footer que index.html -->
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-info">
-                    <div class="footer-logo">⚡ LAHS 2025</div>
-                    <p>VI Latin American Hydropower<br>and Systems Meeting</p>
-                    <p>Montevideo, Uruguay</p>
+            <div class="logo-group">
+                <h3 class="logo-group-title">Sponsors:</h3>
+                <div class="logos sponsors">
+                    <a href="https://www.saltogrande.org/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/salto-grande.svg" alt="Salto Grande" class="logo-vector" width="200" height="84" loading="lazy"></a>
+                    <a href="https://www.cfdsupport.com/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/cfd-support.webp" alt="CFD Support" loading="lazy"></a>
+                    <a href="https://www.ute.com.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ute.webp" alt="UTE" loading="lazy"></a>
+                    <a href="https://ciemsa.com.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ciemsa.webp" alt="CIEMSA" loading="lazy"></a>
+                    <a href="https://investigacion.udelar.edu.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/csic.webp" alt="CSIC - Comisión Sectorial de Investigación Científica" loading="lazy"></a>
                 </div>
-                
-                <div class="footer-links">
-                    <h4>Enlaces rápidos</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="resumenes.html">Resúmenes</a></li>
-                        <li><a href="programa.html">Programa</a></li>
-                        <li><a href="inscripciones.html">Inscripciones</a></li>
-                    </ul>
+            </div>
+            <div class="logo-group">
+                <h3 class="logo-group-title">Declarado de interés por:</h3>
+                <div class="logos interest">
+                    <a href="https://www.aiu.org.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/aiu.webp" alt="Asociación de Ingenieros del Uruguay" loading="lazy"></a>
+                    <a href="https://www.anii.org.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/anii.webp" alt="ANII - Agencia Nacional de Investigación e Innovación" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-turismo/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/uruguay-natural.webp" alt="Uruguay Natural - Ministerio de Turismo" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-industria-energia-mineria/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/miem.webp" alt="Ministerio de Industria, Energía y Minería" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-ambiente/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ministerio-ambiente.webp" alt="Ministerio de Ambiente" loading="lazy"></a>
                 </div>
-                
-                <div class="footer-links">
-                    <h4>Información</h4>
-                    <ul>
-                        <li><a href="conferencistas.html">Conferencistas</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-social">
-                    <h4>Síguenos</h4>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Twitter">𝕏</a>
-                        <a href="#" aria-label="LinkedIn">in</a>
-                        <a href="#" aria-label="Facebook">f</a>
+            </div>
+            <div class="logo-group">
+                <h3 class="logo-group-title">Organizan</h3>
+                <div class="footer-bottom">
+                    <div class="logos organizers">
+                    <img src="/src/assets/img/logos/iahr-latinamerican.webp" alt="IAHR - Latinamerican Working Group" loading="lazy">
+                    <img src="/src/assets/img/logos/fundacion-ricaldoni.webp" alt="Fundación Julio Ricaldoni" loading="lazy">
+                    <img src="/src/assets/img/logos/imfia.webp" alt="IMFIA" loading="lazy">
+                    <img src="/src/assets/img/logos/facultad-ingenieria.webp" alt="Facultad de Ingeniería" loading="lazy">
+                    </div>
+                    <div class="footer-event">
+                        <a href="contacto.html" class="btn btn-primary">Contacto</a>
+                        <p>VII Latin American Hydropower and Systems Meeting</p>
+                        <p>Del 7 al 11 de junio de 2027 &middot; La Paz, Bolivia</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 VI Latin American Hydropower and Systems Meeting. Todos los derechos reservados.</p>
-            </div>
+        </div>
+        <div class="footer-credits">
+            <img src="/src/assets/img/logos/fatum.webp" alt="Secretaría: FATUM" loading="lazy">
         </div>
     </footer>
 
     <script type="module" src="/src/main.ts"></script>
-    <script>
-        // Estilos adicionales para esta página
-        const style = document.createElement('style');
-        style.textContent = `
-            .contact-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                gap: 2rem;
-                margin-top: 2rem;
-            }
-
-            .contact-card {
-                background-color: var(--white);
-                padding: 2rem;
-                border-radius: 12px;
-                box-shadow: var(--shadow);
-                text-align: center;
-                transition: var(--transition);
-            }
-
-            .contact-card:hover {
-                transform: translateY(-5px);
-                box-shadow: var(--shadow-lg);
-            }
-
-            .contact-icon {
-                font-size: 3rem;
-                margin-bottom: 1rem;
-            }
-
-            .contact-card h3 {
-                color: var(--primary-dark);
-                margin-bottom: 1rem;
-            }
-
-            .contact-card p {
-                color: var(--text-light);
-                margin-bottom: 0.5rem;
-                line-height: 1.6;
-            }
-
-            .contact-card .note {
-                font-size: 0.9rem;
-                color: var(--accent);
-                margin-top: 1rem;
-            }
-
-            .form-map-grid {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 3rem;
-            }
-
-            .contact-form-wrapper {
-                background-color: var(--white);
-                padding: 2rem;
-                border-radius: 12px;
-                box-shadow: var(--shadow);
-            }
-
-            .contact-form-wrapper h3 {
-                color: var(--primary-dark);
-                margin-bottom: 2rem;
-            }
-
-            .map-wrapper h3 {
-                color: var(--primary-dark);
-                margin-bottom: 1rem;
-            }
-
-            .map-container {
-                border-radius: 12px;
-                overflow: hidden;
-                box-shadow: var(--shadow);
-                margin-bottom: 1.5rem;
-            }
-
-            .transport-info {
-                background-color: var(--white);
-                padding: 1.5rem;
-                border-radius: 12px;
-                box-shadow: var(--shadow);
-            }
-
-            .transport-info h4 {
-                color: var(--primary-dark);
-                margin-bottom: 1rem;
-            }
-
-            .transport-info ul {
-                list-style: none;
-            }
-
-            .transport-info li {
-                margin-bottom: 0.5rem;
-                color: var(--text-light);
-                padding-left: 1.5rem;
-                position: relative;
-            }
-
-            .transport-info li::before {
-                content: "•";
-                color: var(--accent);
-                font-weight: bold;
-                position: absolute;
-                left: 0;
-            }
-
-            .sponsors-cta {
-                text-align: center;
-                max-width: 700px;
-                margin: 0 auto;
-                padding: 3rem;
-                background-color: var(--white);
-                border-radius: 16px;
-                box-shadow: var(--shadow);
-            }
-
-            .sponsors-cta p {
-                color: var(--text-light);
-                margin-bottom: 2rem;
-                font-size: 1.1rem;
-            }
-
-            .sponsor-buttons {
-                display: flex;
-                gap: 1rem;
-                justify-content: center;
-                margin-bottom: 2rem;
-                flex-wrap: wrap;
-            }
-
-            .sponsor-contact {
-                color: var(--primary-dark);
-                font-size: 1.1rem;
-            }
-
-            @media (max-width: 968px) {
-                .form-map-grid {
-                    grid-template-columns: 1fr;
-                }
-            }
-
-            @media (max-width: 768px) {
-                .sponsor-buttons {
-                    flex-direction: column;
-                }
-                
-                .sponsor-buttons .btn {
-                    width: 100%;
-                }
-            }
-        `;
-        document.head.appendChild(style);
-
-        // Manejo del formulario de contacto
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            // Aquí iría la lógica para enviar el mensaje al servidor
-            alert('¡Mensaje enviado! Te responderemos a la brevedad.');
-            this.reset();
-        });
-    </script>
 </body>
 </html>

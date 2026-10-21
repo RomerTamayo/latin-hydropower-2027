@@ -3,336 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resúmenes - LAHS 2025</title>
+    <title>Resúmenes | LAHS 2027</title>
+    <meta name="description" content="Convocatoria a resúmenes extendidos del VII Latin American Hydropower and Systems Meeting 2027 en La Paz, Bolivia.">
+    <meta name="theme-color" content="#03045e">
+    <link rel="icon" type="image/svg+xml" href="/src/assets/img/logos/lhp-mark.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-container">
-                    <a href="index.html" class="logo">
-                        <span class="logo-icon">⚡</span>
-                        <span class="logo-text">LAHS 2025</span>
-                    </a>
-                    
-                    <button class="menu-toggle" id="menuToggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    
-                    <ul class="nav-menu" id="navMenu">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="resumenes.html" class="active">Resúmenes</a></li>
-                        <li><a href="programa.html">Programa</a></li>
-                        <li><a href="inscripciones.html">Inscripciones</a></li>
-                        <li><a href="conferencistas.html">Conferencistas</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="VII Latin American Hydropower and Systems Meeting - Inicio">
+                <img class="logo-mark" src="/src/assets/img/logos/lhp-mark.svg" alt="" width="38" height="38">
+                <span class="logo-edition">VII</span>
+                <span class="logo-name"><strong>Latin<span>american</span></strong><small>HYDRO POWER AND SYSTEMS</small></span>
+                <span class="logo-meeting">MEETING</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav aria-label="Principal">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Bienvenida</a></li>
+                    <li><a href="resumenes.html" class="active" aria-current="page">Resúmenes</a></li>
+                    <li><a href="programa.html">Programa</a></li>
+                    <li><a href="inscripciones.html">Inscripciones</a></li>
+                    <li><a href="conferencistas.html">Conferencistas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <!-- Page Header -->
-        <section class="page-header">
+    <main id="main">
+        <section class="page-header bg-salto-5">
             <div class="container">
-                <h1>Presentación de Resúmenes</h1>
-                <div class="breadcrumbs">
-                    <a href="index.html">Inicio</a> / <span>Resúmenes</span>
+                <h1>Resúmenes</h1>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <p class="intro reveal">El Comité Científico del VII Latin American Hydropower and Systems Meeting tiene el agrado de invitar a autores a presentar resúmenes extendidos en alguno de los siguientes temas:</p>
+                <div class="reveal">
+                    <div class="themes-grid wide">
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/modelado.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Modelación física y numérica de máquinas y obras hidráulicas</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/fabricacion.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Diseño y fabricación de turbinas y componentes</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/reparacion-maquinas.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Mantenimiento, reparación y repotenciación de centrales hidroeléctricas</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/oscilacion.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Cavitación y oscilaciones en máquinas hidráulicas</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/aprovechamiento.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Aprovechamientos hidroenergéticos</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/energia-marina.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Energía hidráulica no convencional y marina</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/sistema-control.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Sistemas de control de máquinas hidráulicas</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/embalses.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Gestión de embalses hidroeléctricos</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/bombeo.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Sistemas de bombeo</h4>
+                        </div>
+                        <div class="theme">
+                            <img src="/src/assets/img/icons/data-science.svg" alt="" width="52" height="52" loading="lazy">
+                            <h4>Ciencia de datos para monitoreo de máquinas hidráulicas</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt reveal">
+                    <a href="https://latinhydropower2025.org/wp-content/uploads/2025/07/Resumen_Extendido-Espanol.docx" class="btn btn-outline"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2.5H6.5a2 2 0 0 0-2 2v15a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V8z"/><path d="M14 2.5V8h5.5M8.5 12.5h7M8.5 16h7"/></svg>Descargar formato de abstract</a>
                 </div>
             </div>
         </section>
 
-        <!-- Contenido de Resúmenes -->
-        <section class="abstracts-content section-padding">
+        <section class="section section-soft">
             <div class="container">
-                <div class="abstracts-grid">
-                    <div class="abstracts-info">
-                        <h2>Instrucciones para autores</h2>
-                        
-                        <div class="info-card">
-                            <h3>📝 Formato del resumen</h3>
-                            <ul>
-                                <li>Extensión máxima: 500 palabras</li>
-                                <li>Idiomas: Español, Portugués o Inglés</li>
-                                <li>Incluir: Título, autores, afiliación, objetivos, metodología, resultados esperados</li>
-                                <li>Formato: PDF o Word</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="info-card">
-                            <h3>📅 Fechas importantes</h3>
-                            <ul>
-                                <li><strong>Apertura:</strong> 15 de febrero 2025</li>
-                                <li><strong>Cierre:</strong> 21 de agosto 2025</li>
-                                <li><strong>Notificación:</strong> 31 de agosto 2025</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="info-card">
-                            <h3>📌 Áreas temáticas</h3>
-                            <p>Los resúmenes deben enmarcarse en alguno de los ejes temáticos del congreso:</p>
-                            <ul>
-                                <li>Modelación física y numérica de máquinas y obras hidráulicas</li>
-                                <li>Diseño y fabricación de turbinas y componentes</li>
-                                <li>Mantenimiento, reparación y repotenciación</li>
-                                <li>Cavitación y oscilaciones en máquinas hidráulicas</li>
-                                <li>Aprovechamientos hidroenergéticos</li>
-                                <li>Energía hidráulica no convencional y marina</li>
-                                <li>Sistemas de control de máquinas hidráulicas</li>
-                                <li>Gestión de embalses hidroeléctricos</li>
-                                <li>Sistemas de bombeo</li>
-                                <li>Ciencia de datos para monitoreo</li>
-                            </ul>
-                        </div>
-                    </div>
-                    
-                    <div class="abstracts-form">
-                        <h2>Enviar resumen</h2>
-                        <form id="abstractForm">
-                            <div class="form-group">
-                                <label for="title">Título del trabajo *</label>
-                                <input type="text" id="title" name="title" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="authors">Autores (separados por coma) *</label>
-                                <input type="text" id="authors" name="authors" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="email">Email de contacto *</label>
-                                <input type="email" id="email" name="email" required>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="theme">Eje temático *</label>
-                                <select id="theme" name="theme" required>
-                                    <option value="">Seleccione un eje temático</option>
-                                    <option value="modelacion">Modelación física y numérica</option>
-                                    <option value="diseno">Diseño y fabricación</option>
-                                    <option value="mantenimiento">Mantenimiento y reparación</option>
-                                    <option value="cavitacion">Cavitación y oscilaciones</option>
-                                    <option value="aprovechamientos">Aprovechamientos hidroenergéticos</option>
-                                    <option value="marina">Energía hidráulica marina</option>
-                                    <option value="control">Sistemas de control</option>
-                                    <option value="embalses">Gestión de embalses</option>
-                                    <option value="bombeo">Sistemas de bombeo</option>
-                                    <option value="datos">Ciencia de datos</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="abstract">Resumen *</label>
-                                <textarea id="abstract" name="abstract" rows="8" required></textarea>
-                                <small>Máximo 500 palabras</small>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="file">Archivo adjunto (opcional)</label>
-                                <input type="file" id="file" name="file" accept=".pdf,.doc,.docx">
-                            </div>
-                            
-                            <div class="form-group checkbox">
-                                <input type="checkbox" id="terms" required>
-                                <label for="terms">Acepto los términos y condiciones</label>
-                            </div>
-                            
-                            <button type="submit" class="btn btn-primary">Enviar resumen</button>
-                        </form>
-                    </div>
+                <div class="section-head">
+                    <h2 class="section-title">Fechas importantes</h2>
+                </div>
+            <div class="dates-grid three">
+                <div class="date-item reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 15l2.5 2.5 4.5-5"/></svg>
+                    <h4>1 de diciembre 2026</h4>
+                    <p>Apertura llamado a resúmenes extendidos</p>
+                </div>
+                <div class="date-item reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 15l2.5 2.5 4.5-5"/></svg>
+                    <h4>28 de febrero 2027</h4>
+                    <p>Cierre llamado a resúmenes extendidos</p>
+                </div>
+                <div class="date-item reveal">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 15l2.5 2.5 4.5-5"/></svg>
+                    <h4>10 de abril 2027</h4>
+                    <p>Notificación a autores</p>
                 </div>
             </div>
+                <p class="note">Fechas tentativas, sujetas a confirmación por el comité organizador.</p>
+            </div>
         </section>
+
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <!-- Mismo footer que index.html -->
-            <div class="footer-grid">
-                <div class="footer-info">
-                    <div class="footer-logo">⚡ LAHS 2025</div>
-                    <p>VI Latin American Hydropower<br>and Systems Meeting</p>
-                    <p>Montevideo, Uruguay</p>
+            <div class="logo-group">
+                <h3 class="logo-group-title">Sponsors:</h3>
+                <div class="logos sponsors">
+                    <a href="https://www.saltogrande.org/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/salto-grande.svg" alt="Salto Grande" class="logo-vector" width="200" height="84" loading="lazy"></a>
+                    <a href="https://www.cfdsupport.com/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/cfd-support.webp" alt="CFD Support" loading="lazy"></a>
+                    <a href="https://www.ute.com.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ute.webp" alt="UTE" loading="lazy"></a>
+                    <a href="https://ciemsa.com.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ciemsa.webp" alt="CIEMSA" loading="lazy"></a>
+                    <a href="https://investigacion.udelar.edu.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/csic.webp" alt="CSIC - Comisión Sectorial de Investigación Científica" loading="lazy"></a>
                 </div>
-                
-                <div class="footer-links">
-                    <h4>Enlaces rápidos</h4>
-                    <ul>
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="resumenes.html">Resúmenes</a></li>
-                        <li><a href="programa.html">Programa</a></li>
-                        <li><a href="inscripciones.html">Inscripciones</a></li>
-                    </ul>
+            </div>
+            <div class="logo-group">
+                <h3 class="logo-group-title">Declarado de interés por:</h3>
+                <div class="logos interest">
+                    <a href="https://www.aiu.org.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/aiu.webp" alt="Asociación de Ingenieros del Uruguay" loading="lazy"></a>
+                    <a href="https://www.anii.org.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/anii.webp" alt="ANII - Agencia Nacional de Investigación e Innovación" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-turismo/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/uruguay-natural.webp" alt="Uruguay Natural - Ministerio de Turismo" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-industria-energia-mineria/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/miem.webp" alt="Ministerio de Industria, Energía y Minería" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-ambiente/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ministerio-ambiente.webp" alt="Ministerio de Ambiente" loading="lazy"></a>
                 </div>
-                
-                <div class="footer-links">
-                    <h4>Información</h4>
-                    <ul>
-                        <li><a href="conferencistas.html">Conferencistas</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                        <li><a href="#">FAQ</a></li>
-                    </ul>
-                </div>
-                
-                <div class="footer-social">
-                    <h4>Síguenos</h4>
-                    <div class="social-icons">
-                        <a href="#" aria-label="Twitter">𝕏</a>
-                        <a href="#" aria-label="LinkedIn">in</a>
-                        <a href="#" aria-label="Facebook">f</a>
+            </div>
+            <div class="logo-group">
+                <h3 class="logo-group-title">Organizan</h3>
+                <div class="footer-bottom">
+                    <div class="logos organizers">
+                    <img src="/src/assets/img/logos/iahr-latinamerican.webp" alt="IAHR - Latinamerican Working Group" loading="lazy">
+                    <img src="/src/assets/img/logos/fundacion-ricaldoni.webp" alt="Fundación Julio Ricaldoni" loading="lazy">
+                    <img src="/src/assets/img/logos/imfia.webp" alt="IMFIA" loading="lazy">
+                    <img src="/src/assets/img/logos/facultad-ingenieria.webp" alt="Facultad de Ingeniería" loading="lazy">
+                    </div>
+                    <div class="footer-event">
+                        <a href="contacto.html" class="btn btn-primary">Contacto</a>
+                        <p>VII Latin American Hydropower and Systems Meeting</p>
+                        <p>Del 7 al 11 de junio de 2027 &middot; La Paz, Bolivia</p>
                     </div>
                 </div>
             </div>
-            
-            <div class="footer-bottom">
-                <p>&copy; 2025 VI Latin American Hydropower and Systems Meeting. Todos los derechos reservados.</p>
-            </div>
+        </div>
+        <div class="footer-credits">
+            <img src="/src/assets/img/logos/fatum.webp" alt="Secretaría: FATUM" loading="lazy">
         </div>
     </footer>
 
     <script type="module" src="/src/main.ts"></script>
-    <script>
-        // Estilos adicionales para esta página
-        const style = document.createElement('style');
-        style.textContent = `
-            .page-header {
-                background: linear-gradient(135deg, var(--primary-dark), var(--primary));
-                color: var(--white);
-                padding: 8rem 0 4rem;
-                text-align: center;
-                margin-top: 60px;
-            }
-            
-            .page-header h1 {
-                font-size: 3rem;
-                margin-bottom: 1rem;
-            }
-            
-            .breadcrumbs {
-                color: rgba(255,255,255,0.8);
-            }
-            
-            .breadcrumbs a {
-                color: var(--accent);
-                text-decoration: none;
-            }
-            
-            .abstracts-grid {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 3rem;
-            }
-            
-            .info-card {
-                background-color: var(--bg-light);
-                padding: 2rem;
-                border-radius: 12px;
-                margin-bottom: 2rem;
-            }
-            
-            .info-card h3 {
-                color: var(--primary-dark);
-                margin-bottom: 1rem;
-                font-size: 1.3rem;
-            }
-            
-            .info-card ul {
-                list-style: none;
-            }
-            
-            .info-card li {
-                margin-bottom: 0.8rem;
-                padding-left: 1.5rem;
-                position: relative;
-            }
-            
-            .info-card li::before {
-                content: "•";
-                color: var(--accent);
-                font-weight: bold;
-                position: absolute;
-                left: 0;
-            }
-            
-            .abstracts-form {
-                background-color: var(--white);
-                padding: 2rem;
-                border-radius: 12px;
-                box-shadow: var(--shadow-lg);
-            }
-            
-            .form-group {
-                margin-bottom: 1.5rem;
-            }
-            
-            .form-group label {
-                display: block;
-                margin-bottom: 0.5rem;
-                font-weight: 500;
-                color: var(--text-dark);
-            }
-            
-            .form-group input,
-            .form-group select,
-            .form-group textarea {
-                width: 100%;
-                padding: 0.8rem;
-                border: 1px solid var(--border);
-                border-radius: 8px;
-                font-family: inherit;
-                font-size: 1rem;
-            }
-            
-            .form-group input:focus,
-            .form-group select:focus,
-            .form-group textarea:focus {
-                outline: none;
-                border-color: var(--accent);
-            }
-            
-            .form-group.checkbox {
-                display: flex;
-                align-items: center;
-                gap: 0.5rem;
-            }
-            
-            .form-group.checkbox input {
-                width: auto;
-            }
-            
-            .form-group.checkbox label {
-                margin: 0;
-            }
-            
-            .form-group small {
-                color: var(--text-light);
-                font-size: 0.85rem;
-            }
-            
-            @media (max-width: 768px) {
-                .abstracts-grid {
-                    grid-template-columns: 1fr;
-                }
-                
-                .page-header h1 {
-                    font-size: 2rem;
-                }
-            }
-        `;
-        document.head.appendChild(style);
-        
-        // Manejo del formulario
-        document.getElementById('abstractForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Resumen enviado correctamente. Pronto recibirás una confirmación.');
-            this.reset();
-        });
-    </script>
 </body>
 </html>

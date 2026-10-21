@@ -3,260 +3,267 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Programa - LAHS 2025</title>
+    <title>Programa | LAHS 2027</title>
+    <meta name="description" content="Programa preliminar del VII Latin American Hydropower and Systems Meeting, del 7 al 11 de junio de 2027 en La Paz, Bolivia.">
+    <meta name="theme-color" content="#03045e">
+    <link rel="icon" type="image/svg+xml" href="/src/assets/img/logos/lhp-mark.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="container">
-                <div class="nav-container">
-                    <a href="index.html" class="logo">
-                        <span class="logo-icon">⚡</span>
-                        <span class="logo-text">LAHS 2025</span>
-                    </a>
-                    
-                    <button class="menu-toggle" id="menuToggle">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
-                    
-                    <ul class="nav-menu" id="navMenu">
-                        <li><a href="index.html">Inicio</a></li>
-                        <li><a href="resumenes.html">Resúmenes</a></li>
-                        <li><a href="programa.html" class="active">Programa</a></li>
-                        <li><a href="inscripciones.html">Inscripciones</a></li>
-                        <li><a href="conferencistas.html">Conferencistas</a></li>
-                        <li><a href="contacto.html">Contacto</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+    <a class="skip-link" href="#main">Saltar al contenido</a>
+    <header class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo" aria-label="VII Latin American Hydropower and Systems Meeting - Inicio">
+                <img class="logo-mark" src="/src/assets/img/logos/lhp-mark.svg" alt="" width="38" height="38">
+                <span class="logo-edition">VII</span>
+                <span class="logo-name"><strong>Latin<span>american</span></strong><small>HYDRO POWER AND SYSTEMS</small></span>
+                <span class="logo-meeting">MEETING</span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav aria-label="Principal">
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Bienvenida</a></li>
+                    <li><a href="resumenes.html">Resúmenes</a></li>
+                    <li><a href="programa.html" class="active" aria-current="page">Programa</a></li>
+                    <li><a href="inscripciones.html">Inscripciones</a></li>
+                    <li><a href="conferencistas.html">Conferencistas</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section class="page-header">
+    <main id="main">
+        <section class="page-header bg-represa-2">
             <div class="container">
-                <h1>Programa del Evento</h1>
-                <div class="breadcrumbs">
-                    <a href="index.html">Inicio</a> / <span>Programa</span>
+                <h1>Programa</h1>
+                <p>Programa preliminar, sujeto a cambios</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <div class="program-tabs" role="tablist" aria-label="Días del evento">
+                    <button class="tab-btn active" role="tab" aria-selected="true" data-day="dia1">Lunes 7/06<small>Cursos pre-congreso</small></button>
+                    <button class="tab-btn" role="tab" aria-selected="false" data-day="dia2">Martes 8/06<small>Cursos pre-congreso</small></button>
+                    <button class="tab-btn" role="tab" aria-selected="false" data-day="dia3">Miércoles 9/06<small>Programa del congreso</small></button>
+                    <button class="tab-btn" role="tab" aria-selected="false" data-day="dia4">Jueves 10/06<small>Programa del congreso</small></button>
+                    <button class="tab-btn" role="tab" aria-selected="false" data-day="dia5">Viernes 11/06<small>Visita técnica</small></button>
+                </div>
+                <div class="schedule-day active" id="dia1" role="tabpanel">
+                    <h2>Lunes 7 de junio</h2>
+                    <p>Cursos pre-congreso</p>
+                    <div class="schedule-item">
+                        <div class="schedule-time">9:00 – 11:00</div>
+                        <div><h3>Curso pre-congreso I</h3><p>Por anunciar</p></div>
+                    </div>
+                    <div class="schedule-item break">
+                        <div class="schedule-time">11:00 – 11:30</div>
+                        <div><h3>Coffee break</h3></div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">11:30 – 13:30</div>
+                        <div><h3>Curso pre-congreso I</h3><p>Por anunciar</p></div>
+                    </div>
+                    <div class="schedule-item break">
+                        <div class="schedule-time">13:30 – 14:30</div>
+                        <div><h3>Almuerzo</h3></div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">16:00 – 17:30</div>
+                        <div><h3>Curso pre-congreso II</h3><p>Por anunciar</p></div>
+                    </div>
+                    <div class="schedule-item break">
+                        <div class="schedule-time">17:30 – 17:45</div>
+                        <div><h3>Coffee break</h3></div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">17:45 – 19:15</div>
+                        <div><h3>Curso pre-congreso II</h3><p>Por anunciar</p></div>
+                    </div>
+                </div>
+                <div class="schedule-day" id="dia2" role="tabpanel">
+                    <h2>Martes 8 de junio</h2>
+                    <p>Cursos pre-congreso</p>
+                    <div class="schedule-item">
+                        <div class="schedule-time">9:00 – 11:00</div>
+                        <div><h3>Curso pre-congreso I</h3><p>Por anunciar</p></div>
+                    </div>
+                    <div class="schedule-item break">
+                        <div class="schedule-time">11:00 – 11:30</div>
+                        <div><h3>Coffee break</h3></div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">11:30 – 13:30</div>
+                        <div><h3>Curso pre-congreso I</h3><p>Por anunciar</p></div>
+                    </div>
+                    <div class="schedule-item break">
+                        <div class="schedule-time">13:30 – 14:30</div>
+                        <div><h3>Almuerzo</h3></div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">16:00 – 17:30</div>
+                        <div><h3>Curso pre-congreso II</h3><p>Por anunciar</p></div>
+                    </div>
+                    <div class="schedule-item break">
+                        <div class="schedule-time">17:30 – 17:45</div>
+                        <div><h3>Coffee break</h3></div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">17:45 – 19:15</div>
+                        <div><h3>Curso pre-congreso II</h3><p>Por anunciar</p></div>
+                    </div>
+                </div>
+                <div class="schedule-day" id="dia3" role="tabpanel">
+                    <h2>Miércoles 9 de junio</h2>
+                    <p>Programa del congreso</p>
+                    <div class="schedule-item">
+                        <div class="schedule-time">8:00 – 8:30</div>
+                        <div><h3>Acreditaciones</h3></div>
+                    </div>
+                    <div class="schedule-item highlight">
+                        <div class="schedule-time">8:30 – 9:00</div>
+                        <div><h3>Ceremonia de apertura</h3></div>
+                    </div>
+                    <div class="schedule-item highlight">
+                        <div class="schedule-time">9:00 – 10:00</div>
+                        <div><h3>Conferencia plenaria</h3><p>Conferencista por confirmar</p></div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">10:00 – 11:00</div>
+                        <div><h3>Sesiones técnicas</h3><p>Ejes temáticos por definir</p></div>
+                    </div>
+                    <div class="schedule-item break">
+                        <div class="schedule-time">11:00 – 11:30</div>
+                        <div><h3>Coffee break</h3></div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">11:30 – 13:30</div>
+                        <div><h3>Sesiones técnicas</h3><p>Ejes temáticos por definir</p></div>
+                    </div>
+                    <div class="schedule-item break">
+                        <div class="schedule-time">13:30 – 14:30</div>
+                        <div><h3>Almuerzo</h3></div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">14:30 – 16:30</div>
+                        <div><h3>Sesiones técnicas</h3><p>Ejes temáticos por definir</p></div>
+                    </div>
+                    <div class="schedule-item break">
+                        <div class="schedule-time">16:30 – 17:00</div>
+                        <div><h3>Coffee break</h3></div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">17:00 – 18:00</div>
+                        <div><h3>Sesiones técnicas</h3><p>Ejes temáticos por definir</p></div>
+                    </div>
+                </div>
+                <div class="schedule-day" id="dia4" role="tabpanel">
+                    <h2>Jueves 10 de junio</h2>
+                    <p>Programa del congreso</p>
+                    <div class="schedule-item">
+                        <div class="schedule-time">8:00 – 9:00</div>
+                        <div><h3>Acreditaciones</h3></div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">9:00 – 11:00</div>
+                        <div><h3>Sesiones técnicas</h3><p>Ejes temáticos por definir</p></div>
+                    </div>
+                    <div class="schedule-item break">
+                        <div class="schedule-time">11:00 – 11:30</div>
+                        <div><h3>Coffee break</h3></div>
+                    </div>
+                    <div class="schedule-item highlight">
+                        <div class="schedule-time">11:30 – 12:30</div>
+                        <div><h3>Conferencia plenaria</h3><p>Conferencista por confirmar</p></div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">12:30 – 13:30</div>
+                        <div><h3>Sesiones técnicas</h3><p>Ejes temáticos por definir</p></div>
+                    </div>
+                    <div class="schedule-item break">
+                        <div class="schedule-time">13:30 – 14:30</div>
+                        <div><h3>Almuerzo</h3></div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">14:30 – 16:30</div>
+                        <div><h3>Sesiones técnicas</h3><p>Ejes temáticos por definir</p></div>
+                    </div>
+                    <div class="schedule-item break">
+                        <div class="schedule-time">16:30 – 17:00</div>
+                        <div><h3>Coffee break</h3></div>
+                    </div>
+                    <div class="schedule-item">
+                        <div class="schedule-time">17:00 – 18:00</div>
+                        <div><h3>Sesiones técnicas</h3><p>Ejes temáticos por definir</p></div>
+                    </div>
+                    <div class="schedule-item highlight">
+                        <div class="schedule-time">18:00 – 18:30</div>
+                        <div><h3>Ceremonia de clausura</h3></div>
+                    </div>
+                </div>
+                <div class="schedule-day" id="dia5" role="tabpanel">
+                    <h2>Viernes 11 de junio</h2>
+                    <p>Visita técnica</p>
+                    <div class="schedule-item highlight">
+                        <div class="schedule-time">7:00 – 19:00</div>
+                        <div><h3>Visita técnica</h3><p>Central hidroeléctrica por confirmar</p></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="program-content section-padding">
-            <div class="container">
-                <div class="program-tabs">
-                    <button class="tab-btn active" data-day="1">Día 1 - 27 Oct</button>
-                    <button class="tab-btn" data-day="2">Día 2 - 28 Oct</button>
-                    <button class="tab-btn" data-day="3">Día 3 - 29 Oct</button>
-                    <button class="tab-btn" data-day="4">Día 4 - 30 Oct</button>
-                    <button class="tab-btn" data-day="5">Día 5 - 31 Oct</button>
-                </div>
-
-                <div class="program-schedule">
-                    <!-- Día 1 -->
-                    <div class="schedule-day active" id="day1">
-                        <h2>Martes 27 de Octubre, 2025</h2>
-                        
-                        <div class="schedule-item">
-                            <div class="schedule-time">08:30 - 09:00</div>
-                            <div class="schedule-content">
-                                <h3>Acreditación y entrega de materiales</h3>
-                                <p>Hall principal</p>
-                            </div>
-                        </div>
-                        
-                        <div class="schedule-item">
-                            <div class="schedule-time">09:00 - 10:30</div>
-                            <div class="schedule-content">
-                                <h3>Ceremonia de Apertura</h3>
-                                <p>Palabras de bienvenida de autoridades</p>
-                                <p>Salón Auditorio</p>
-                            </div>
-                        </div>
-                        
-                        <div class="schedule-item">
-                            <div class="schedule-time">10:30 - 11:00</div>
-                            <div class="schedule-content">
-                                <h3>Coffee Break</h3>
-                            </div>
-                        </div>
-                        
-                        <div class="schedule-item">
-                            <div class="schedule-time">11:00 - 12:30</div>
-                            <div class="schedule-content">
-                                <h3>Conferencia Magistral: El futuro de la hidroelectricidad en Latinoamérica</h3>
-                                <p>Conferencista: Por confirmar</p>
-                                <p>Salón Auditorio</p>
-                            </div>
-                        </div>
-                        
-                        <div class="schedule-item">
-                            <div class="schedule-time">12:30 - 14:00</div>
-                            <div class="schedule-content">
-                                <h3>Almuerzo</h3>
-                            </div>
-                        </div>
-                        
-                        <div class="schedule-item">
-                            <div class="schedule-time">14:00 - 16:00</div>
-                            <div class="schedule-content">
-                                <h3>Sesiones Técnicas Paralelas</h3>
-                                <p>Sala A: Modelación física y numérica</p>
-                                <p>Sala B: Diseño y fabricación</p>
-                            </div>
-                        </div>
-                        
-                        <div class="schedule-item">
-                            <div class="schedule-time">16:00 - 16:30</div>
-                            <div class="schedule-content">
-                                <h3>Coffee Break</h3>
-                            </div>
-                        </div>
-                        
-                        <div class="schedule-item">
-                            <div class="schedule-time">16:30 - 18:30</div>
-                            <div class="schedule-content">
-                                <h3>Sesiones Técnicas Paralelas</h3>
-                                <p>Sala C: Mantenimiento y reparación</p>
-                                <p>Sala D: Cavitación y oscilaciones</p>
-                            </div>
-                        </div>
-                        
-                        <div class="schedule-item">
-                            <div class="schedule-time">19:00</div>
-                            <div class="schedule-content">
-                                <h3>Cóctel de Bienvenida</h3>
-                                <p>Terraza Mirador</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Los demás días seguirían la misma estructura -->
-                    <!-- Por brevedad, incluyo solo un placeholder para los otros días -->
-                    <div class="schedule-day" id="day2">
-                        <h2>Miércoles 28 de Octubre, 2025</h2>
-                        <p class="coming-soon">Programación en proceso de definición. Pronto estará disponible.</p>
-                    </div>
-                    
-                    <div class="schedule-day" id="day3">
-                        <h2>Jueves 29 de Octubre, 2025</h2>
-                        <p class="coming-soon">Programación en proceso de definición. Pronto estará disponible.</p>
-                    </div>
-                    
-                    <div class="schedule-day" id="day4">
-                        <h2>Viernes 30 de Octubre, 2025</h2>
-                        <p class="coming-soon">Programación en proceso de definición. Pronto estará disponible.</p>
-                    </div>
-                    
-                    <div class="schedule-day" id="day5">
-                        <h2>Sábado 31 de Octubre, 2025</h2>
-                        <p class="coming-soon">Programación en proceso de definición. Pronto estará disponible.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer class="footer">
-        <!-- Mismo footer que index.html -->
+        <div class="container">
+            <div class="logo-group">
+                <h3 class="logo-group-title">Sponsors:</h3>
+                <div class="logos sponsors">
+                    <a href="https://www.saltogrande.org/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/salto-grande.svg" alt="Salto Grande" class="logo-vector" width="200" height="84" loading="lazy"></a>
+                    <a href="https://www.cfdsupport.com/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/cfd-support.webp" alt="CFD Support" loading="lazy"></a>
+                    <a href="https://www.ute.com.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ute.webp" alt="UTE" loading="lazy"></a>
+                    <a href="https://ciemsa.com.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ciemsa.webp" alt="CIEMSA" loading="lazy"></a>
+                    <a href="https://investigacion.udelar.edu.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/csic.webp" alt="CSIC - Comisión Sectorial de Investigación Científica" loading="lazy"></a>
+                </div>
+            </div>
+            <div class="logo-group">
+                <h3 class="logo-group-title">Declarado de interés por:</h3>
+                <div class="logos interest">
+                    <a href="https://www.aiu.org.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/aiu.webp" alt="Asociación de Ingenieros del Uruguay" loading="lazy"></a>
+                    <a href="https://www.anii.org.uy/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/anii.webp" alt="ANII - Agencia Nacional de Investigación e Innovación" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-turismo/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/uruguay-natural.webp" alt="Uruguay Natural - Ministerio de Turismo" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-industria-energia-mineria/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/miem.webp" alt="Ministerio de Industria, Energía y Minería" loading="lazy"></a>
+                    <a href="https://www.gub.uy/ministerio-ambiente/" target="_blank" rel="noopener noreferrer"><img src="/src/assets/img/logos/ministerio-ambiente.webp" alt="Ministerio de Ambiente" loading="lazy"></a>
+                </div>
+            </div>
+            <div class="logo-group">
+                <h3 class="logo-group-title">Organizan</h3>
+                <div class="footer-bottom">
+                    <div class="logos organizers">
+                    <img src="/src/assets/img/logos/iahr-latinamerican.webp" alt="IAHR - Latinamerican Working Group" loading="lazy">
+                    <img src="/src/assets/img/logos/fundacion-ricaldoni.webp" alt="Fundación Julio Ricaldoni" loading="lazy">
+                    <img src="/src/assets/img/logos/imfia.webp" alt="IMFIA" loading="lazy">
+                    <img src="/src/assets/img/logos/facultad-ingenieria.webp" alt="Facultad de Ingeniería" loading="lazy">
+                    </div>
+                    <div class="footer-event">
+                        <a href="contacto.html" class="btn btn-primary">Contacto</a>
+                        <p>VII Latin American Hydropower and Systems Meeting</p>
+                        <p>Del 7 al 11 de junio de 2027 &middot; La Paz, Bolivia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-credits">
+            <img src="/src/assets/img/logos/fatum.webp" alt="Secretaría: FATUM" loading="lazy">
+        </div>
     </footer>
 
     <script type="module" src="/src/main.ts"></script>
-    <script>
-        // Estilos adicionales
-        const style = document.createElement('style');
-        style.textContent = `
-            .program-tabs {
-                display: flex;
-                flex-wrap: wrap;
-                gap: 1rem;
-                margin-bottom: 2rem;
-                justify-content: center;
-            }
-            
-            .tab-btn {
-                padding: 0.8rem 1.5rem;
-                background-color: var(--white);
-                border: 2px solid var(--border);
-                border-radius: 50px;
-                font-weight: 600;
-                cursor: pointer;
-                transition: var(--transition);
-            }
-            
-            .tab-btn:hover,
-            .tab-btn.active {
-                background-color: var(--primary);
-                color: var(--white);
-                border-color: var(--primary);
-            }
-            
-            .schedule-day {
-                display: none;
-            }
-            
-            .schedule-day.active {
-                display: block;
-            }
-            
-            .schedule-item {
-                display: flex;
-                gap: 2rem;
-                padding: 1.5rem;
-                background-color: var(--white);
-                border-radius: 12px;
-                margin-bottom: 1rem;
-                box-shadow: var(--shadow);
-            }
-            
-            .schedule-time {
-                min-width: 150px;
-                font-weight: 700;
-                color: var(--primary);
-            }
-            
-            .schedule-content h3 {
-                color: var(--text-dark);
-                margin-bottom: 0.5rem;
-            }
-            
-            .schedule-content p {
-                color: var(--text-light);
-                margin-bottom: 0.3rem;
-            }
-            
-            .coming-soon {
-                text-align: center;
-                padding: 3rem;
-                background-color: var(--bg-light);
-                border-radius: 12px;
-                color: var(--text-light);
-                font-size: 1.2rem;
-            }
-            
-            @media (max-width: 768px) {
-                .schedule-item {
-                    flex-direction: column;
-                    gap: 0.5rem;
-                }
-            }
-        `;
-        document.head.appendChild(style);
-        
-        // Tabs functionality
-        document.querySelectorAll('.tab-btn').forEach(btn => {
-            btn.addEventListener('click', () => {
-                document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
-                btn.classList.add('active');
-                
-                document.querySelectorAll('.schedule-day').forEach(day => day.classList.remove('active'));
-                document.getElementById(`day${btn.dataset.day}`).classList.add('active');
-            });
-        });
-    </script>
 </body>
 </html>
