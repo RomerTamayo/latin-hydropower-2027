@@ -160,8 +160,13 @@ ul {
     transition: transform 0.25s var(--ease), background 0.25s var(--ease), color 0.25s var(--ease), box-shadow 0.25s var(--ease), border-color 0.25s var(--ease);
 }
 
-.btn:hover {
-    transform: translateY(-2px);
+/* Sin desplazamiento al pasar el cursor: si el botón se mueve, un clic en su borde puede perderse */
+.btn {
+    touch-action: manipulation;
+}
+
+#contactForm {
+    scroll-margin-top: calc(var(--nav-h) + 90px);
 }
 
 .btn-primary {
@@ -878,12 +883,6 @@ html:has(.gallery[open]) {
     background: linear-gradient(to top, rgba(2, 3, 30, 0.92) 0%, rgba(2, 3, 30, 0.68) 45%, transparent 100%);
 }
 
-/* El anuncio ya incluye título y fecha: solo se muestra el crédito */
-.gallery-slide .poster figcaption {
-    padding: 1.5rem 1rem 0.5rem;
-    background: linear-gradient(to top, rgba(2, 3, 30, 0.75), transparent);
-}
-
 .gallery-slide figcaption strong {
     font-family: var(--font-head);
     font-size: clamp(1.25rem, 3.4vw, 2.4rem);
@@ -1453,7 +1452,7 @@ html:has(.gallery[open]) {
 /* ---------- Footer ---------- */
 
 .footer {
-    padding: 72px 0 0;
+    padding: 72px 0 48px;
     background: var(--white);
     border-top: 1px solid var(--line);
 }
@@ -1541,23 +1540,6 @@ html:has(.gallery[open]) {
 
 .footer-event .btn {
     margin-top: 1.25rem;
-}
-
-.footer-credits {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0.75rem;
-    margin-top: 48px;
-    padding: 24px 0;
-    border-top: 1px solid var(--line);
-    font-size: 0.88rem;
-    color: var(--muted);
-}
-
-.footer-credits img {
-    height: 26px;
-    width: auto;
 }
 
 /* ---------- Animaciones ---------- */
@@ -1868,24 +1850,35 @@ html:has(.gallery[open]) {
 
     .price-table td {
         display: flex;
+        align-items: center;
         justify-content: space-between;
         gap: 1rem;
-        padding: 0.2rem 0;
+        padding: 0.45rem 0;
         border: 0;
     }
 
     .price-table td:first-child {
         font-family: var(--font-head);
+        font-size: 1.05rem;
         font-weight: var(--fw-bold);
+        line-height: 1.35;
         color: var(--navy);
         margin-bottom: 0.25rem;
     }
 
+    .price-table td:not(:first-child) {
+        font-size: 1.25rem;
+        font-variant-numeric: tabular-nums;
+        line-height: 1.4;
+        color: var(--navy);
+    }
+
     .price-table td:not(:first-child)::before {
-        content: attr(data-label);
-        font-weight: 500;
-        color: var(--muted);
-        white-space: normal;
+        content: attr(data-label) "\A" attr(data-dates);
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: var(--text);
+        white-space: pre-line;
     }
 
     .price-table tbody tr:hover {
