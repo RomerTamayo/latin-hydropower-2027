@@ -9,7 +9,7 @@
     <link rel="icon" type="image/svg+xml" href="/src/assets/img/logos/lhp-mark.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/styles/style.css">
 </head>
 <body>
@@ -42,8 +42,9 @@
         <section class="hero">
             <div class="hero-slides" aria-hidden="true">
                 <div class="hero-slide bg-hero-inicio active"></div>
-                <div class="hero-slide bg-hero-montaje"></div>
                 <div class="hero-slide bg-hero-embalse"></div>
+                <div class="hero-slide bg-hero-inscripciones"></div>
+                <div class="hero-slide bg-hero-contacto"></div>
             </div>
             <div class="container">
                 <div class="hero-content">
@@ -144,8 +145,8 @@
         <section class="section section-soft">
             <div class="container">
                 <div class="feature-row reveal">
-                    <button type="button" class="photo-card bg-hero-contacto" id="galleryOpen" aria-haspopup="dialog" aria-controls="gallery">
-                        <span class="photo-card-title">Photo Gallery<small>Represas y centrales hidroeléctricas</small></span>
+                    <button type="button" class="photo-card bg-morelia" id="galleryOpen" aria-haspopup="dialog" aria-controls="gallery">
+                        <span class="photo-card-title">Photo Gallery<small>Conferencias anteriores</small></span>
                     </button>
                     <div class="info-card">
                         <div class="info-card-media bg-salto-4"></div>
@@ -189,27 +190,27 @@
             <div class="dates-grid">
                 <div class="date-item reveal">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 15l2.5 2.5 4.5-5"/></svg>
-                    <h4>1 de diciembre 2026</h4>
+                    <h4>1 de enero 2027</h4>
                     <p>Apertura llamado a resúmenes extendidos</p>
                 </div>
                 <div class="date-item reveal">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 15l2.5 2.5 4.5-5"/></svg>
-                    <h4>28 de febrero 2027</h4>
+                    <h4>30 de marzo 2027</h4>
                     <p>Cierre llamado a resúmenes extendidos</p>
                 </div>
                 <div class="date-item reveal">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 15l2.5 2.5 4.5-5"/></svg>
-                    <h4>10 de abril 2027</h4>
+                    <h4>15 de mayo 2027</h4>
                     <p>Notificación a autores</p>
                 </div>
                 <div class="date-item reveal">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 15l2.5 2.5 4.5-5"/></svg>
-                    <h4>1 de diciembre 2026 al 30 de abril 2027</h4>
+                    <h4>1 de enero al 31 de mayo 2027</h4>
                     <p>Inscripciones tempranas</p>
                 </div>
                 <div class="date-item reveal">
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="16.5" rx="2.5"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4M8.5 15l2.5 2.5 4.5-5"/></svg>
-                    <h4>1 de mayo al 31 de mayo 2027</h4>
+                    <h4>Desde el 1 de junio 2027</h4>
                     <p>Inscripciones tardías</p>
                 </div>
             </div>
@@ -285,47 +286,31 @@
         </div>
     </footer>
 
-    <dialog class="gallery" id="gallery" aria-label="Galería de represas y centrales">
+    <dialog class="gallery" id="gallery" aria-label="Galería de conferencias anteriores">
         <div class="gallery-inner">
             <div class="gallery-bar">
-                <p>Represas y centrales <span class="gallery-count" aria-live="polite">1 / 4</span></p>
+                <p>Conferencias anteriores <span class="gallery-count" aria-live="polite">1 / 2</span></p>
                 <button type="button" class="gallery-btn gallery-close" aria-label="Cerrar galería"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
             </div>
             <div class="gallery-stage">
                 <ul class="gallery-track">
                 <li class="gallery-slide">
-                    <figure style="--ratio: 733 / 404">
-                        <img src="/src/assets/img/photos/hero-inscripciones.webp" alt="Vista aérea de una represa de hormigón entre montañas" width="733" height="404" loading="lazy">
+                    <figure style="--ratio: 724 / 441">
+                        <img src="/src/assets/img/photos/morelia-2023-apertura.webp" alt="Mesa de apertura del V Latin American Hydropower &amp; Systems Meeting en Morelia" width="724" height="441" loading="lazy">
                         <figcaption>
-                            <strong>Presa Sehuencas</strong>
-                            <a href="https://www.google.com/maps/search/?api=1&amp;query=Presa+Sehuencas%2C+Cochabamba%2C+Bolivia" target="_blank" rel="noopener noreferrer">Proyecto Ivirizu, municipios de Totora y Pocona, provincia Carrasco, Cochabamba, Bolivia</a>
+                            <strong>V Meeting 2023: apertura</strong>
+                            <span>Morelia, Michoacán, México. 12 al 14 de septiembre de 2023</span>
+                            <a href="https://www.iahr.org/index/detail/1293" target="_blank" rel="noopener noreferrer">Foto: IAHR</a>
                         </figcaption>
                     </figure>
                 </li>
                 <li class="gallery-slide">
-                    <figure style="--ratio: 739 / 415">
-                        <img src="/src/assets/img/photos/hero-embalse.webp" alt="Vista aérea de una central hidroeléctrica, su embalse y la tubería de presión" width="739" height="415" loading="lazy">
+                    <figure style="--ratio: 1600 / 960">
+                        <img src="/src/assets/img/photos/morelia-2023-participantes.webp" alt="Participantes del V Latin American Hydropower &amp; Systems Meeting en Morelia" width="1600" height="960" loading="lazy">
                         <figcaption>
-                            <strong>Central Hidroeléctrica Misicuni</strong>
-                            <a href="https://www.google.com/maps/search/?api=1&amp;query=Central+Hidroel%C3%A9ctrica+Misicuni%2C+Quillacollo%2C+Cochabamba%2C+Bolivia" target="_blank" rel="noopener noreferrer">Comunidades Molle Molle y Caluyo, municipio de Quillacollo, Cochabamba, Bolivia</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="gallery-slide">
-                    <figure style="--ratio: 1280 / 854">
-                        <img src="/src/assets/img/photos/hero-inicio.webp" alt="Casa de máquinas y tubería de presión junto al embalse" width="1280" height="854" loading="lazy">
-                        <figcaption>
-                            <strong>Central Hidroeléctrica Misicuni</strong>
-                            <a href="https://www.google.com/maps/search/?api=1&amp;query=Central+Hidroel%C3%A9ctrica+Misicuni%2C+Quillacollo%2C+Cochabamba%2C+Bolivia" target="_blank" rel="noopener noreferrer">Comunidades Molle Molle y Caluyo, municipio de Quillacollo, Cochabamba, Bolivia</a>
-                        </figcaption>
-                    </figure>
-                </li>
-                <li class="gallery-slide">
-                    <figure style="--ratio: 1280 / 1005">
-                        <img src="/src/assets/img/photos/hero-contacto.webp" alt="Central hidroeléctrica con subestación y tubería de presión en la ladera" width="1280" height="1005" loading="lazy">
-                        <figcaption>
-                            <strong>Central Hidroeléctrica Chojlla</strong>
-                            <a href="https://www.google.com/maps/search/?api=1&amp;query=-16.4124%2C-67.7725" target="_blank" rel="noopener noreferrer">La Chojlla, municipio de Yanacachi, provincia Sud Yungas, La Paz, Bolivia</a>
+                            <strong>V Meeting 2023: participantes</strong>
+                            <span>Morelia, Michoacán, México. 12 al 14 de septiembre de 2023</span>
+                            <a href="https://www.andritz.com/hydro-en/about-andritz-hydro/locations/morelia-mexico/news-mexico" target="_blank" rel="noopener noreferrer">Foto: ANDRITZ</a>
                         </figcaption>
                     </figure>
                 </li>
@@ -334,10 +319,8 @@
                 <button type="button" class="gallery-btn gallery-next" aria-label="Imagen siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
             </div>
             <div class="gallery-thumbs">
-                <button type="button" class="gallery-thumb" aria-label="Ver imagen 1 de 4"><img src="/src/assets/img/photos/hero-inscripciones.webp" alt="" loading="lazy"></button>
-                <button type="button" class="gallery-thumb" aria-label="Ver imagen 2 de 4"><img src="/src/assets/img/photos/hero-embalse.webp" alt="" loading="lazy"></button>
-                <button type="button" class="gallery-thumb" aria-label="Ver imagen 3 de 4"><img src="/src/assets/img/photos/hero-inicio.webp" alt="" loading="lazy"></button>
-                <button type="button" class="gallery-thumb" aria-label="Ver imagen 4 de 4"><img src="/src/assets/img/photos/hero-contacto.webp" alt="" loading="lazy"></button>
+                <button type="button" class="gallery-thumb" aria-label="Ver imagen 1 de 2"><img src="/src/assets/img/photos/morelia-2023-apertura.webp" alt="" loading="lazy"></button>
+                <button type="button" class="gallery-thumb" aria-label="Ver imagen 2 de 2"><img src="/src/assets/img/photos/morelia-2023-participantes.webp" alt="" loading="lazy"></button>
             </div>
         </div>
     </dialog>

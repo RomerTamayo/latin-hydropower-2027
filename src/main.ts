@@ -158,7 +158,7 @@ function initHeroSlides(): void {
 }
 
 /**
- * Galería de represas a pantalla completa
+ * Galería de conferencias anteriores a pantalla completa
  */
 function initGallery(): void {
     const dialog = document.getElementById('gallery') as HTMLDialogElement | null;

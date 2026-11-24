@@ -16,8 +16,8 @@
     --line: #dbe6ee;
     --white: #ffffff;
 
-    --font-head: 'Nunito', system-ui, sans-serif;
-    --font-body: 'Nunito', system-ui, sans-serif;
+    --font-head: 'IBM Plex Sans', system-ui, sans-serif;
+    --font-body: 'IBM Plex Sans', system-ui, sans-serif;
 
     --radius: 14px;
     --radius-lg: 20px;
@@ -105,7 +105,7 @@ ul {
 .section-label {
     display: block;
     font-family: var(--font-body);
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--muted);
     margin-bottom: 1.5rem;
@@ -117,7 +117,7 @@ ul {
 }
 
 .section-head p {
-    max-width: 640px;
+    max-width: 42rem;
     margin: 0.75rem auto 0;
 }
 
@@ -247,7 +247,7 @@ ul {
 .logo-edition {
     font-family: var(--font-head);
     font-size: 1.6rem;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.02em;
 }
 
@@ -279,7 +279,7 @@ ul {
 .logo-meeting {
     font-family: var(--font-head);
     font-size: 1.6rem;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: 0.02em;
 }
 
@@ -292,7 +292,7 @@ ul {
 .nav-menu a {
     display: block;
     padding: 0.5rem 0.85rem;
-    font-size: 0.92rem;
+    font-size: 0.97rem;
     font-weight: 600;
     color: var(--white);
     border-radius: 999px;
@@ -402,7 +402,7 @@ ul {
 .hero-content {
     position: relative;
     z-index: 2;
-    max-width: 640px;
+    max-width: 42rem;
 }
 
 .hero-year {
@@ -461,7 +461,7 @@ ul {
 }
 
 .countdown span {
-    font-size: 0.7rem;
+    font-size: 0.78rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--ice);
@@ -556,12 +556,12 @@ ul {
 }
 
 .theme img {
-    width: 52px;
-    height: 52px;
+    width: 3.25rem;
+    height: 3.25rem;
 }
 
 .theme h4 {
-    font-size: 0.95rem;
+    font-size: 1rem;
     font-weight: 700;
     line-height: 1.25;
 }
@@ -629,7 +629,7 @@ ul {
 .photo-card small {
     display: block;
     font-family: var(--font-body);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--ice);
     margin-top: 0.5rem;
@@ -651,7 +651,7 @@ ul {
 
 .info-card-body {
     padding: 1.25rem 1.4rem 1.4rem;
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--blue);
 }
 
@@ -807,7 +807,7 @@ html:has(.gallery[open]) {
 .gallery-count {
     margin-left: 0.6rem;
     font-family: var(--font-body);
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: 500;
     color: var(--sky);
     white-space: nowrap;
@@ -878,6 +878,7 @@ html:has(.gallery[open]) {
     line-height: 1.15;
 }
 
+.gallery-slide figcaption span,
 .gallery-slide figcaption a {
     font-size: clamp(0.8rem, 1.5vw, 1.05rem);
     line-height: 1.4;
@@ -1006,7 +1007,7 @@ html:has(.gallery[open]) {
 }
 
 .dates-grid.three {
-    grid-template-columns: repeat(3, minmax(0, 220px));
+    grid-template-columns: repeat(3, minmax(0, 15rem));
     justify-content: center;
 }
 
@@ -1037,13 +1038,13 @@ html:has(.gallery[open]) {
 }
 
 .date-item p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     line-height: 1.5;
 }
 
 .note {
     margin-top: 2rem;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: var(--muted);
     text-align: center;
 }
@@ -1058,7 +1059,7 @@ html:has(.gallery[open]) {
 }
 
 .speaker {
-    width: 260px;
+    width: 17rem;
     text-align: center;
 }
 
@@ -1083,14 +1084,14 @@ html:has(.gallery[open]) {
 }
 
 .speaker p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     color: var(--blue);
     margin-bottom: 0.75rem;
 }
 
 .speaker a {
     display: block;
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: 600;
     margin-top: 0.35rem;
 }
@@ -1132,7 +1133,7 @@ html:has(.gallery[open]) {
     width: 100%;
     min-width: 560px;
     border-collapse: collapse;
-    font-size: 0.92rem;
+    font-size: 0.97rem;
 }
 
 .price-table th,
@@ -1202,7 +1203,7 @@ html:has(.gallery[open]) {
 }
 
 .intro {
-    max-width: 860px;
+    max-width: 54rem;
     margin-bottom: 3rem;
     font-size: 1.02rem;
 }
@@ -1220,7 +1221,7 @@ html:has(.gallery[open]) {
 .tab-btn {
     padding: 0.65rem 1.25rem;
     font-family: var(--font-body);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: var(--navy);
     background: var(--soft);
@@ -1233,7 +1234,7 @@ html:has(.gallery[open]) {
 .tab-btn small {
     display: block;
     font-weight: 500;
-    font-size: 0.75rem;
+    font-size: 0.82rem;
     color: var(--muted);
 }
 
@@ -1252,7 +1253,7 @@ html:has(.gallery[open]) {
 
 .schedule-day {
     display: none;
-    max-width: 860px;
+    max-width: 54rem;
     margin: 0 auto;
 }
 
@@ -1305,7 +1306,7 @@ html:has(.gallery[open]) {
 }
 
 .schedule-item p {
-    font-size: 0.88rem;
+    font-size: 0.95rem;
     color: var(--muted);
 }
 
@@ -1348,7 +1349,7 @@ html:has(.gallery[open]) {
 
 .form-group label {
     display: block;
-    font-size: 0.88rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: var(--ink);
     margin-bottom: 0.35rem;
@@ -1380,7 +1381,7 @@ html:has(.gallery[open]) {
     border-radius: 10px;
     background: var(--ice);
     color: var(--navy);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
 }
 
 .form-feedback[hidden] {
@@ -1401,6 +1402,10 @@ html:has(.gallery[open]) {
     background: var(--soft);
 }
 
+.contact-host {
+    margin-bottom: 2rem;
+}
+
 .contact-item svg {
     width: 26px;
     height: 26px;
@@ -1415,7 +1420,7 @@ html:has(.gallery[open]) {
 }
 
 .contact-item p {
-    font-size: 0.92rem;
+    font-size: 0.97rem;
 }
 
 .map {
@@ -1449,7 +1454,7 @@ html:has(.gallery[open]) {
     align-items: center;
     gap: 1.25rem;
     font-family: var(--font-head);
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     font-weight: 600;
     color: var(--muted);
     margin-bottom: 1.75rem;
@@ -1516,7 +1521,7 @@ html:has(.gallery[open]) {
     margin-top: 56px;
     padding-top: 40px;
     border-top: 1px solid var(--line);
-    font-size: 0.9rem;
+    font-size: 0.95rem;
     color: var(--navy);
     text-align: center;
 }
@@ -1533,7 +1538,7 @@ html:has(.gallery[open]) {
     margin-top: 48px;
     padding: 24px 0;
     border-top: 1px solid var(--line);
-    font-size: 0.8rem;
+    font-size: 0.88rem;
     color: var(--muted);
 }
 
@@ -1570,6 +1575,47 @@ html:has(.gallery[open]) {
     .reveal {
         opacity: 1;
         transform: none;
+    }
+}
+
+/* Laptops: menú más compacto para que quepa junto al logo */
+@media (min-width: 1101px) and (max-width: 1499px) {
+    .nav-menu {
+        gap: 0;
+    }
+
+    .nav-menu a {
+        padding: 0.5rem 0.6rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* ---------- Texto más grande en pantallas de escritorio ---------- */
+
+@media (min-width: 1280px) {
+    html {
+        font-size: 112.5%;
+    }
+}
+
+@media (min-width: 1500px) {
+    :root {
+        --container: 1320px;
+    }
+
+    html {
+        font-size: 118.75%;
+    }
+}
+
+@media (min-width: 1800px) {
+    :root {
+        --container: 1440px;
+        --nav-h: 84px;
+    }
+
+    html {
+        font-size: 125%;
     }
 }
 
@@ -1845,7 +1891,7 @@ html:has(.gallery[open]) {
 .bg-represa-4 { --bg: url("../assets/img/photos/represa-4.webp"); }
 .bg-salto-4 { --bg: url("../assets/img/photos/salto-grande-4.webp"); }
 .bg-hero-inicio { --bg: url("../assets/img/photos/hero-inicio.webp"); --bg-pos: center 60%; }
-.bg-hero-montaje { --bg: url("../assets/img/photos/hero-montaje.webp"); }
+.bg-morelia { --bg: url("../assets/img/photos/morelia-2023-participantes.webp"); --bg-pos: center 25%; }
 .bg-hero-embalse { --bg: url("../assets/img/photos/hero-embalse.webp"); --bg-pos: center 65%; }
 .bg-hero-resumenes { --bg: url("../assets/img/photos/hero-resumenes.webp"); --bg-pos: center 35%; }
 .bg-hero-programa { --bg: url("../assets/img/photos/hero-programa.webp"); --bg-pos: center 60%; }
