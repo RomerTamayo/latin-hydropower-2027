@@ -67,7 +67,7 @@ function initReveal(): void {
 }
 
 /**
- * Cuenta regresiva hasta el 7 de junio de 2027 (hora de La Paz)
+ * Cuenta regresiva hasta el 20 de septiembre de 2027 (hora de La Paz)
  */
 function initCountdown(): void {
     const days = document.getElementById('countDays');
@@ -75,7 +75,7 @@ function initCountdown(): void {
     const mins = document.getElementById('countMins');
     if (!days || !hours || !mins) return;
 
-    const target = new Date('2027-06-07T09:00:00-04:00').getTime();
+    const target = new Date('2027-09-20T08:00:00-04:00').getTime();
 
     const update = (): void => {
         const diff = Math.max(0, target - Date.now());
@@ -109,7 +109,7 @@ function initProgramTabs(): void {
 }
 
 /**
- * Formulario de contacto (el envío en línea aún no está habilitado)
+ * Formulario de contacto: abre el correo del visitante con el mensaje ya redactado
  */
 function initContactForm(): void {
     const form = document.getElementById('contactForm') as HTMLFormElement | null;
@@ -118,8 +118,17 @@ function initContactForm(): void {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+        const data = new FormData(form);
+        const name = String(data.get('name') ?? '').trim();
+        const email = String(data.get('email') ?? '').trim();
+        const message = String(data.get('message') ?? '').trim();
+
+        const subject = `Consulta LAHS 2027 - ${name}`;
+        const body = `${message}\n\nNombre: ${name}\nCorreo: ${email}`.replace(/\r?\n/g, '\r\n');
+        window.location.href = `mailto:acalizaya@umsa.bo?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
         feedback.hidden = false;
-        feedback.textContent = 'Gracias por tu interés. El envío de mensajes en línea se habilitará próximamente; mientras tanto, guarda tu consulta y vuelve a intentarlo más adelante.';
+        feedback.textContent = 'Se abrirá tu aplicación de correo con el mensaje listo: solo falta pulsar enviar. Si no se abre, escríbenos a acalizaya@umsa.bo.';
     });
 }
 
