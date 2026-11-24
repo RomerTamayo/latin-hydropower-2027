@@ -331,7 +331,7 @@ ul {
 }
 
 .menu-toggle.active span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
+    transform: translateY(10px) rotate(45deg);
 }
 
 .menu-toggle.active span:nth-child(2) {
@@ -339,7 +339,7 @@ ul {
 }
 
 .menu-toggle.active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
+    transform: translateY(-10px) rotate(-45deg);
 }
 
 /* ---------- Hero (inicio) ---------- */
@@ -351,12 +351,46 @@ ul {
     align-items: center;
     padding: calc(var(--nav-h) + 60px) 0 160px;
     color: var(--white);
-    background: var(--navy) url("../assets/img/photos/hero-la-paz.webp") center / cover no-repeat;
+    background: var(--navy) url("../assets/img/photos/hero-inicio.webp") center 60% / cover no-repeat;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 90px), 0 100%);
     overflow: hidden;
 }
 
+/* Fondo con imágenes que cambian automáticamente */
+.hero-slides,
+.hero-slide {
+    position: absolute;
+    inset: 0;
+}
+
+.hero-slides {
+    isolation: isolate;
+}
+
+.hero-slide {
+    background: var(--bg) var(--bg-pos, center) / cover no-repeat;
+    opacity: 0;
+}
+
+/* La anterior queda debajo mientras la nueva aparece encima */
+.hero-slide.previous {
+    opacity: 1;
+}
+
+.hero-slide.active {
+    z-index: 1;
+    opacity: 1;
+    animation: heroFade 1.2s ease;
+}
+
+@keyframes heroFade {
+    from {
+        opacity: 0;
+    }
+}
+
 .hero::before {
+    z-index: 1;
     content: "";
     position: absolute;
     inset: 0;
@@ -367,6 +401,7 @@ ul {
 
 .hero-content {
     position: relative;
+    z-index: 2;
     max-width: 640px;
 }
 
@@ -438,7 +473,7 @@ ul {
     position: relative;
     padding: calc(var(--nav-h) + 90px) 0 140px;
     color: var(--white);
-    background: var(--navy) var(--bg) center / cover no-repeat;
+    background: var(--navy) var(--bg) var(--bg-pos, center) / cover no-repeat;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 70px), 0 100%);
 }
 
@@ -546,6 +581,9 @@ ul {
     align-items: center;
     justify-content: center;
     min-height: 280px;
+    width: 100%;
+    border: 0;
+    cursor: pointer;
     border-radius: var(--radius-lg);
     overflow: hidden;
     color: var(--white);
@@ -557,7 +595,7 @@ ul {
     position: absolute;
     inset: 0;
     z-index: -1;
-    background: var(--bg) center / cover no-repeat;
+    background: var(--bg) var(--bg-pos, center) / cover no-repeat;
     transition: transform 0.6s var(--ease);
 }
 
@@ -578,7 +616,9 @@ ul {
     color: var(--white);
 }
 
-.photo-card h3 {
+.photo-card-title {
+    font-family: var(--font-head);
+    line-height: 1.2;
     color: var(--white);
     font-size: clamp(1.6rem, 3vw, 2.2rem);
     font-weight: 600;
@@ -715,6 +755,203 @@ ul {
 
 .quick-link:hover svg {
     color: var(--white);
+}
+
+/* ---------- Galería de fotos ---------- */
+
+.photo-card:focus-visible,
+.gallery button:focus-visible {
+    outline: 3px solid var(--cyan);
+    outline-offset: 2px;
+}
+
+html:has(.gallery[open]) {
+    overflow: hidden;
+}
+
+.gallery {
+    width: 100%;
+    height: 100dvh;
+    max-width: none;
+    max-height: none;
+    border: 0;
+    color: var(--white);
+    background: rgba(2, 3, 48, 0.96);
+}
+
+.gallery::backdrop {
+    background: transparent;
+}
+
+.gallery[open] {
+    animation: heroFade 0.3s ease;
+}
+
+.gallery-inner {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+}
+
+.gallery-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 12px 16px;
+    font-family: var(--font-head);
+    font-weight: 600;
+}
+
+.gallery-count {
+    margin-left: 0.6rem;
+    font-family: var(--font-body);
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--sky);
+    white-space: nowrap;
+}
+
+.gallery-stage {
+    position: relative;
+    flex: 1;
+    min-height: 0;
+}
+
+.gallery-track {
+    display: flex;
+    height: 100%;
+    overflow-x: auto;
+    overscroll-behavior: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.gallery-track::-webkit-scrollbar,
+.gallery-thumbs::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery-slide {
+    display: flex;
+    flex: 0 0 100%;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 8px 84px;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.gallery-slide img {
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.gallery-btn {
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    border-radius: 50%;
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.12);
+    cursor: pointer;
+    transition: background 0.25s var(--ease);
+}
+
+.gallery-btn:hover {
+    background: var(--blue);
+}
+
+.gallery-btn svg {
+    width: 22px;
+    height: 22px;
+}
+
+.gallery-prev,
+.gallery-next {
+    position: absolute;
+    top: calc(50% - 22px);
+}
+
+.gallery-prev {
+    left: 20px;
+}
+
+.gallery-next {
+    right: 20px;
+}
+
+.gallery-thumbs {
+    display: flex;
+    justify-content: safe center;
+    gap: 10px;
+    padding: 14px 16px 18px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.gallery-thumb {
+    flex: 0 0 auto;
+    width: 104px;
+    height: 68px;
+    padding: 0;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    overflow: hidden;
+    background: none;
+    opacity: 0.5;
+    cursor: pointer;
+    transition: opacity 0.25s var(--ease), border-color 0.25s var(--ease);
+}
+
+.gallery-thumb:hover,
+.gallery-thumb[aria-current="true"] {
+    opacity: 1;
+}
+
+.gallery-thumb[aria-current="true"] {
+    border-color: var(--cyan);
+}
+
+.gallery-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Móvil: se desliza con el dedo, sin flechas sobre la foto */
+@media (max-width: 640px) {
+    .gallery-slide {
+        padding: 8px 0;
+    }
+
+    .gallery-prev,
+    .gallery-next {
+        display: none;
+    }
+
+    .gallery-thumb {
+        width: 72px;
+        height: 52px;
+    }
+}
+
+/* Móvil horizontal: prioriza la altura de la foto */
+@media (max-height: 480px) {
+    .gallery-thumbs {
+        display: none;
+    }
+
+    .gallery-bar {
+        padding: 4px 16px;
+    }
 }
 
 /* ---------- Fechas importantes ---------- */
@@ -1304,6 +1541,12 @@ ul {
 @media (max-width: 1100px) {
     .menu-toggle {
         display: flex;
+        margin-left: auto;
+    }
+
+    /* Fuera del flujo flex para que no desplace la hamburguesa */
+    .nav-container > nav {
+        position: absolute;
     }
 
     .nav-menu {
@@ -1338,8 +1581,15 @@ ul {
         grid-template-columns: repeat(3, 1fr);
     }
 
-    .dates-grid {
-        grid-template-columns: repeat(3, 1fr);
+    .dates-grid,
+    .dates-grid.three {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .dates-grid .date-item {
+        flex: 0 0 calc((100% - 48px) / 3);
     }
 }
 
@@ -1357,8 +1607,19 @@ ul {
 
     .cards-3,
     .quick-links {
-        grid-template-columns: 1fr;
         gap: 18px;
+    }
+
+    .dark-card {
+        padding: 1.25rem;
+    }
+
+    .dark-card strong {
+        font-size: 1.2rem;
+    }
+
+    .map {
+        aspect-ratio: 16 / 9;
     }
 
     .hero {
@@ -1379,6 +1640,27 @@ ul {
 @media (max-width: 640px) {
     .container {
         padding: 0 16px;
+    }
+
+    .nav-container {
+        gap: 0.5rem;
+    }
+
+    .nav-menu {
+        padding: 1.5rem 16px;
+    }
+
+    .cards-3,
+    .quick-links {
+        grid-template-columns: 1fr;
+    }
+
+    .dark-card strong {
+        font-size: 1.45rem;
+    }
+
+    .map {
+        aspect-ratio: 4 / 3;
     }
 
     .logo-mark {
@@ -1409,9 +1691,21 @@ ul {
         gap: 28px 20px;
     }
 
-    .dates-grid,
-    .dates-grid.three {
+    .dates-grid .date-item {
+        flex-basis: calc((100% - 24px) / 2);
+    }
+
+    .program-tabs {
+        display: grid;
         grid-template-columns: 1fr 1fr;
+    }
+
+    .tab-btn {
+        padding: 0.65rem 0.5rem;
+    }
+
+    .tab-btn:last-child:nth-child(odd) {
+        grid-column: 1 / -1;
     }
 
     .hero-actions {
@@ -1514,11 +1808,14 @@ ul {
 /* ---------- Imágenes de fondo ---------- */
 
 .bg-represa-1 { --bg: url("../assets/img/photos/represa-1.webp"); }
-.bg-represa-2 { --bg: url("../assets/img/photos/represa-2.webp"); }
 .bg-represa-3 { --bg: url("../assets/img/photos/represa-3.webp"); }
 .bg-represa-4 { --bg: url("../assets/img/photos/represa-4.webp"); }
-.bg-salto-1 { --bg: url("../assets/img/photos/salto-grande-1.webp"); }
 .bg-salto-4 { --bg: url("../assets/img/photos/salto-grande-4.webp"); }
-.bg-salto-5 { --bg: url("../assets/img/photos/salto-grande-5.webp"); }
-.bg-lago { --bg: url("../assets/img/photos/vista-lago.webp"); }
-.bg-la-paz { --bg: url("../assets/img/photos/hero-la-paz.webp"); }
+.bg-hero-inicio { --bg: url("../assets/img/photos/hero-inicio.webp"); --bg-pos: center 60%; }
+.bg-hero-montaje { --bg: url("../assets/img/photos/hero-montaje.webp"); }
+.bg-hero-embalse { --bg: url("../assets/img/photos/hero-embalse.webp"); --bg-pos: center 65%; }
+.bg-hero-resumenes { --bg: url("../assets/img/photos/hero-resumenes.webp"); --bg-pos: center 35%; }
+.bg-hero-programa { --bg: url("../assets/img/photos/hero-programa.webp"); --bg-pos: center 60%; }
+.bg-hero-inscripciones { --bg: url("../assets/img/photos/hero-inscripciones.webp"); --bg-pos: center 45%; }
+.bg-hero-conferencistas { --bg: url("../assets/img/photos/hero-conferencistas.webp"); --bg-pos: center 40%; }
+.bg-hero-contacto { --bg: url("../assets/img/photos/hero-contacto.webp"); --bg-pos: center 55%; }

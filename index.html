@@ -40,6 +40,11 @@
 
     <main id="main">
         <section class="hero">
+            <div class="hero-slides" aria-hidden="true">
+                <div class="hero-slide bg-hero-inicio active"></div>
+                <div class="hero-slide bg-hero-montaje"></div>
+                <div class="hero-slide bg-hero-embalse"></div>
+            </div>
             <div class="container">
                 <div class="hero-content">
                     <span class="hero-year">2027</span>
@@ -119,9 +124,9 @@
         <section class="section section-soft">
             <div class="container">
                 <div class="feature-row reveal">
-                    <a href="https://latinhydropower2025.org/photo-gallery/" target="_blank" rel="noopener noreferrer" class="photo-card bg-represa-2">
-                        <h3>Photo Gallery<small>Revive la edición 2025 en Montevideo</small></h3>
-                    </a>
+                    <button type="button" class="photo-card bg-hero-contacto" id="galleryOpen" aria-haspopup="dialog" aria-controls="gallery">
+                        <span class="photo-card-title">Photo Gallery<small>Represas y centrales hidroeléctricas</small></span>
+                    </button>
                     <div class="info-card">
                         <div class="info-card-media bg-salto-4"></div>
                         <div class="info-card-body">
@@ -260,6 +265,31 @@
             <img src="/src/assets/img/logos/fatum.webp" alt="Secretaría: FATUM" loading="lazy">
         </div>
     </footer>
+
+    <dialog class="gallery" id="gallery" aria-label="Galería de represas y centrales">
+        <div class="gallery-inner">
+            <div class="gallery-bar">
+                <p>Represas y centrales <span class="gallery-count" aria-live="polite">1 / 4</span></p>
+                <button type="button" class="gallery-btn gallery-close" aria-label="Cerrar galería"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18M6 6l12 12"/></svg></button>
+            </div>
+            <div class="gallery-stage">
+                <ul class="gallery-track">
+                <li class="gallery-slide"><img src="/src/assets/img/photos/hero-inscripciones.webp" alt="Vista aérea de una represa de hormigón entre montañas" width="733" height="404" loading="lazy"></li>
+                <li class="gallery-slide"><img src="/src/assets/img/photos/hero-embalse.webp" alt="Vista aérea de una central hidroeléctrica, su embalse y la tubería de presión" width="739" height="415" loading="lazy"></li>
+                <li class="gallery-slide"><img src="/src/assets/img/photos/hero-inicio.webp" alt="Casa de máquinas y tubería de presión junto al embalse" width="1280" height="854" loading="lazy"></li>
+                <li class="gallery-slide"><img src="/src/assets/img/photos/hero-contacto.webp" alt="Central hidroeléctrica con subestación y tubería de presión en la ladera" width="1280" height="1005" loading="lazy"></li>
+                </ul>
+                <button type="button" class="gallery-btn gallery-prev" aria-label="Imagen anterior"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg></button>
+                <button type="button" class="gallery-btn gallery-next" aria-label="Imagen siguiente"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg></button>
+            </div>
+            <div class="gallery-thumbs">
+                <button type="button" class="gallery-thumb" aria-label="Ver imagen 1 de 4"><img src="/src/assets/img/photos/hero-inscripciones.webp" alt="" loading="lazy"></button>
+                <button type="button" class="gallery-thumb" aria-label="Ver imagen 2 de 4"><img src="/src/assets/img/photos/hero-embalse.webp" alt="" loading="lazy"></button>
+                <button type="button" class="gallery-thumb" aria-label="Ver imagen 3 de 4"><img src="/src/assets/img/photos/hero-inicio.webp" alt="" loading="lazy"></button>
+                <button type="button" class="gallery-thumb" aria-label="Ver imagen 4 de 4"><img src="/src/assets/img/photos/hero-contacto.webp" alt="" loading="lazy"></button>
+            </div>
+        </div>
+    </dialog>
 
     <script type="module" src="/src/main.ts"></script>
 </body>
